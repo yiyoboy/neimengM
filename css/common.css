@@ -124,9 +124,11 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 .w_80{width:80px !important;}
 .w_50{width:50px !important;}
 
-#main{height:100%;}
+#main{height:100%; background-color: #eaeaea; border: none; -moz-box-shadow:20px 0px 30px #c2bebd inset;              /* For Firefox3.6+ */
+    -webkit-box-shadow:20px 0px 30px #c2bebd inset;           /* For Chrome5+, Safari5+ */
+    box-shadow:-10px 0px 30px #c2bebd;                   /* For Latest Opera */}
 /** * Slideout module styles*/
-.menu{background-color: #1D1F20;background-image: linear-gradient(145deg, #1D1F20, #404348); border: none;}
+.menu{}
 .menu a{color: #fff;}
 .menu a:hover{text-decoration: underline;}
 .menu-header{border-bottom: 1px solid #2a2d2f;padding: 20px 0 20px 60px;background: url('../images/github.png') no-repeat 15px 15px;background-size: 32px;}
@@ -172,7 +174,7 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 .panel-header{padding: 5px; background: #dedede; border: none;}
 .topTab{ }
 .topTab li a{ display: block; text-align; height: 38px; line-height: 38px; border-radius: 2px; text-align:  center; color: #565656; background: #ffffff; margin: 0 2px; text-decoration: none;}
-.topTab li a.active{ color: #fff;background: #92cb20;}
+.topTab li a.active{ color: #fff;/* 皮肤 */background: #92cb20;}
 
 
 /* 底部图标 */
