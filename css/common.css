@@ -115,3 +115,8 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 @keyframes shake{0%, 100%{-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);}
     50%{-webkit-transform:translate3d(-10px, 0, 0);transform:translate3d(-10px, 0, 0);}}
 .shake{-webkit-animation-name:shake;animation-name:shake;-webkit-animation-duration:2s;animation-duration:2s;-webkit-animation-iteration-count: 4;animation-iteration-count: 4;}
+
+#main img{height: auto;
+    width: auto\9;
+    width:100%;
+}

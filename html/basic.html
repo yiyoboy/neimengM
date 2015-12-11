@@ -12,6 +12,7 @@
     <script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
     <script type="text/javascript" src="../js/jquery.easyui.mobile.js"></script>
     <script type="text/javascript" src="../js/slideout.min.js"></script>
+    <script type="text/javascript" src="../js/touch.min.js"></script>
     <!--<script type="text/javascript" src="../js/layout.js"></script>-->
 
 
@@ -77,25 +78,42 @@
                 <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-large-smartart',size:'large',iconAlign:'top',plain:true">SmartArt</a>
             </div>
         </footer>
+        <div id="center">
+
+        </div>
     </div>
 </div>
 <script>
-
+    var flag=false;
     var slideout = new Slideout({
         'panel': document.getElementById('main'),
         'menu': document.getElementById('menu'),
         'padding': 256,
         'tolerance': 70
     });
+    touch.on('#main', 'touchstart', function(ev){
+        ev.preventDefault();
+    });
+    var target = document.getElementById("main");
+    target.style.webkitTransition = 'all ease 0.2s';
 
+    touch.on(target, 'swipeleft', function(ev){
+       // this.style.webkitTransform = "translate3d(-" + this.offsetLeft + "px,0,0)";
+
+
+            window.location.href="http://www.baidu.com";
+
+
+
+    });
     document.querySelector('.js-slideout-toggle').addEventListener('click', function() {
         slideout.toggle();
-    });
 
+    });
     document.querySelector('.menu').addEventListener('click', function(eve) {
         if (eve.target.nodeName === 'A') { slideout.close(); }
     });
-    function aload(t){"use strict";t=t||window.document.querySelectorAll("[data-aload]"),void 0===t.length&&(t=[t]);var a,e=0,r=t.length;for(e;r>e;e+=1)a=t[e],a["LINK"!==a.tagName?"src":"href"]=a.getAttribute("data-aload"),a.removeAttribute("data-aload");return t}
+    function aload(t){ "use strict";t=t||window.document.querySelectorAll("[data-aload]"),void 0===t.length&&(t=[t]);var a,e=0,r=t.length;for(e;r>e;e+=1)a=t[e],a["LINK"!==a.tagName?"src":"href"]=a.getAttribute("data-aload"),a.removeAttribute("data-aload");return t;}
 
 </script>
 </body>
