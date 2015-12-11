@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Basic Layout - jQuery EasyUI Mobile Demo</title>
+	<link rel="stylesheet" type="text/css" href="../css/themes/metro-orange/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../css/themes/mobile.css">
+	<link rel="stylesheet" type="text/css" href="../css/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easyui.mobile.js"></script>
+    <script type="text/javascript" src="../js/slideout.min.js"></script>
+    <!--<script type="text/javascript" src="../js/layout.js"></script>-->
+
+
+
+</head>
+<body>
+<nav id="menu" class="menu">
+    <a href="https://github.com/mango/slideout" target="_blank">
+        <header class="menu-header">
+            <span class="menu-header-title">Slideout.js</span>
+        </header>
+    </a>
+
+    <section class="menu-section">
+        <h3 class="menu-section-title">Docs</h3>
+        <ul class="menu-section-list">
+            <li><a href="#" target="_blank">Installation</a></li>
+            <li><a href="#" target="_blank">Usage</a></li>
+            <li><a href="#" target="_blank">API</a></li>
+            <li><a href="#" target="_blank">npm-scripts</a></li>
+        </ul>
+    </section>
+
+    <section class="menu-section">
+        <h3 class="menu-section-title">Slideout</h3>
+        <ul class="menu-section-list">
+            <li><a href="#" target="_blank">Fork it</a></li>
+            <li><a href="#" target="_blank">Create an issue</a></li>
+            <li><a href="#">Download</a></li>
+        </ul>
+    </section>
+
+    <section class="menu-section">
+        <h3 class="menu-section-title">Mango</h3>
+        <ul class="menu-section-list">
+            <li><a href="#" target="_blank">About Mango</a></li>
+            <li><a href="#" target="_blank">Follow Us</a></li>
+        </ul>
+    </section>
+</nav>
+
+
+
+<div id="main" class="panel">
+	<div class="easyui-navpanel"  >
+        <header>
+            <div class="m-toolbar">
+                <div class="m-title">Layout</div>
+                <div class="m-left">
+                    <a href="javascript:void(0)" class="easyui-linkbutton js-slideout-toggle" plain="true" outline="true">Back</a>
+                </div>
+                <div class="m-right">
+                    <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-search" plain="true" outline="true">Search</a>
+                </div>
+            </div>
+
+        </header>
+        <footer>
+            <div class="m-buttongroup m-buttongroup-justified" style="width:100%">
+                <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-large-picture',size:'large',iconAlign:'top',plain:true">Picture</a>
+                <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-large-clipart',size:'large',iconAlign:'top',plain:true">Clip Art</a>
+                <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-large-shapes',size:'large',iconAlign:'top',plain:true">Shapes</a>
+                <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-large-smartart',size:'large',iconAlign:'top',plain:true">SmartArt</a>
+            </div>
+        </footer>
+    </div>
+</div>
+<script>
+
+    var slideout = new Slideout({
+        'panel': document.getElementById('main'),
+        'menu': document.getElementById('menu'),
+        'padding': 256,
+        'tolerance': 70
+    });
+
+    document.querySelector('.js-slideout-toggle').addEventListener('click', function() {
+        slideout.toggle();
+    });
+
+    document.querySelector('.menu').addEventListener('click', function(eve) {
+        if (eve.target.nodeName === 'A') { slideout.close(); }
+    });
+    function aload(t){"use strict";t=t||window.document.querySelectorAll("[data-aload]"),void 0===t.length&&(t=[t]);var a,e=0,r=t.length;for(e;r>e;e+=1)a=t[e],a["LINK"!==a.tagName?"src":"href"]=a.getAttribute("data-aload"),a.removeAttribute("data-aload");return t}
+
+</script>
+</body>
+</html>

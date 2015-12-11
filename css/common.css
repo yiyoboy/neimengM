@@ -1,0 +1,117 @@
+@charset "utf-8";
+html,body{width: 100%;height: 100%; margin:0; padding:0; font-family:tahoma, arial, 'Hiragino Sans GB', \5b8b\4f53, sans-serif !important;}
+
+/*清除浮动*/
+.group:after{content:".";display:block;visibility:hidden;clear:both;height:0;}
+.group{display:inline-block;}
+.group{display:block;}
+.clear{clear:both;height:0;width:0;line-height:0;font-size:0;}
+
+/* 显示隐藏*/
+.hidden{visibility:hidden;margin:0;padding:0;width:0;height:0;background:none;font-size:0;line-height:0;}
+.show{visibility:visible;}
+
+/* 可访问性导航*/
+a.accessibility01{position:absolute;left:0;top:-10000px;display:block;width:100%;text-align:center;font-size:1.3em;z-index:10000;}
+a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{position:absolute;top:0;padding:15px 0;background:#1d60a7;color:#fff;font-weight:bold;z-index:10000;}
+
+/* background*/
+.bg_none{background:none !important;}
+.font_weight_none{font-weight:normal;}
+.bg_gray{background:#F2F2F2 !important;}
+
+/* border*/
+.bt_none{border-top:none !important;}
+.br_none{border-right:none !important;}
+.bb_none{border-bottom:none !important;}
+.bt_solid{border-top:1px solid #dbdbdb !important;}
+
+/* clear*/
+.cl{clear:both !important;}
+
+/* float*/
+.fl{float:left !important;}
+.fr{float:right !important;}
+.fn{float:none !important;}
+
+/* text*/
+.txt_left{text-align:left !important;}
+.txt_centern{text-align:center !important;}
+.txt_right{text-align:right !important;}
+.va_top{vertical-align:top !important;}
+
+/* color*/
+.orange{color:#ff7e00 !important;}
+.grey{color:#6500e3 !important;}
+.grey01{color:#b7b7b7 !important;}
+.yellow{color:#fff600 !important;}
+.blue{color:#0095ff !important;}
+.red{color:#ff0000 !important;}
+.green{color:#6ea000 !important;}
+
+/* font-size*/
+.font11{font-size:11px !important;}
+.font_blod{font-weight:bold !important;}
+
+/* margin*/
+.mt_0{margin-top:0 !important;}
+.mt_10{margin-top:10px !important;}
+.mt_110{margin-top:110px !important;}
+.ml_0{margin-left:0 !important;}
+.ml_15{margin-left:15px !important;}
+.ml_10{margin-left:-10px !important;}
+.mb_0{margin-bottom:0 !important;}
+.mb_10{margin-bottom:10px !important;}
+.mr_10{margin-right:10px !important;}
+/* padding*/
+
+.pr_none{padding-right:0 !important;}
+.pr_5{padding-right:5px !important;}
+.pr_28{padding-right:28px !important;}
+
+/* input*/
+.inputS{height:16px;padding:3px 0 1px 5px;border:1px solid #c4c4c4;color:#666666;}
+.selectS{padding:1px 0;}
+.fileS{padding:1px 0;}
+.select{border:1px solid #c4c4c4;padding:2px;min-width:100px;}
+.checkboxS{position:relative;top:-1px;}
+.textarea{border:1px solid #c4c4c4;width:98%;}
+.radio{position:relative;top:-3px;}
+/* width*/
+.wb90{width:90% !important;}
+.wb25{width:25% !important;}
+.wb95{width:95% !important;}
+.w_700{width:700px !important;}
+.w_200{width:200px !important;}
+.w_150{width:150px !important;}
+.w_100{width:100px !important;}
+.w_80{width:80px !important;}
+.w_50{width:50px !important;}
+
+#main{height:100%;}
+/** * Slideout module styles*/
+.menu{background-color: #1D1F20;background-image: linear-gradient(145deg, #1D1F20, #404348); border: none;}
+.menu a{color: #fff;}
+.menu a:hover{text-decoration: underline;}
+.menu-header{border-bottom: 1px solid #2a2d2f;padding: 20px 0 20px 60px;background: url('../images/github.png') no-repeat 15px 15px;background-size: 32px;}
+.menu-header-title{font-weight: 400;letter-spacing: 0.5px;margin: 0;}
+.menu-section{margin: 25px 0;}
+.menu-section-title{text-transform: uppercase;color: #85888d;font-weight: 200;font-size: 13px;letter-spacing: 1px;padding: 0 20px;margin:0;}
+.menu-section-list{padding:0;margin: 10px 0;list-style:none;}
+.menu-section-list a{display: block;padding: 10px 20px;}
+.menu-section-list a:hover{background-color: rgba(255, 255, 255, 0.1);text-decoration: none;}
+
+.menu,
+.slideout-menu{position: fixed;left: 0;top: 0;bottom: 0;right: 0;z-index: 0;width: 256px;overflow-y: scroll;-webkit-overflow-scrolling: touch;display: none;}
+.panel,
+.slideout-panel{position: relative;z-index: 1;}
+.slideout-open,
+.slideout-open body{overflow: hidden;}
+.slideout-open .slideout-menu{display: block;}
+/* Animation
+----------------------------------*/
+@-webkit-keyframes shake{0%, 100%{-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);}
+                                        50%{-webkit-transform:translate3d(-10px, 0, 0);transform:translate3d(-10px, 0, 0);}}
+@keyframes shake{0%, 100%{-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);}
+    50%{-webkit-transform:translate3d(-10px, 0, 0);transform:translate3d(-10px, 0, 0);}}
+.shake{-webkit-animation-name:shake;animation-name:shake;-webkit-animation-duration:2s;animation-duration:2s;-webkit-animation-iteration-count: 4;animation-iteration-count: 4;}
