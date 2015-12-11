@@ -124,20 +124,25 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 .w_80{width:80px !important;}
 .w_50{width:50px !important;}
 
-#main{height:100%; background-color: #eaeaea; border: none; -moz-box-shadow:20px 0px 30px #c2bebd inset;              /* For Firefox3.6+ */
-    -webkit-box-shadow:20px 0px 30px #c2bebd inset;           /* For Chrome5+, Safari5+ */
-    box-shadow:-10px 0px 30px #c2bebd;                   /* For Latest Opera */}
+#main{height:100%; background-color: #eaeaea; -moz-box-shadow:-10px 0px 20px #c2bebd;              /* For Firefox3.6+ */border: none;
+    -webkit-box-shadow:-10px 0px 20px #c2bebd;           /* For Chrome5+, Safari5+ */
+    box-shadow:-10px 0px 20px #c2bebd;                   /* For Latest Opera */}
 /** * Slideout module styles*/
-.menu{}
-.menu a{color: #fff;}
-.menu a:hover{text-decoration: underline;}
-.menu-header{border-bottom: 1px solid #2a2d2f;padding: 20px 0 20px 60px;background: url('../images/github.png') no-repeat 15px 15px;background-size: 32px;}
-.menu-header-title{font-weight: 400;letter-spacing: 0.5px;margin: 0;}
-.menu-section{margin: 25px 0;}
-.menu-section-title{text-transform: uppercase;color: #85888d;font-weight: 200;font-size: 13px;letter-spacing: 1px;padding: 0 20px;margin:0;}
-.menu-section-list{padding:0;margin: 10px 0;list-style:none;}
-.menu-section-list a{display: block;padding: 10px 20px;}
+.menu{ background-image: url("../images/common/logo.png"); background-size: 50% auto; background-position: center 90%; background-repeat: no-repeat; background-color:#eaeaea;}
+.menu .topInfo{ height: 250px; position: relative;}
+.menu .topInfo .photo{ position: absolute; width: 100px; top: 50%; left: 50%; margin: -60px 0 0 -50px;}
+.menu .topInfo .photo p{ overflow:hidden; display:block; width:80px; height:80px; border:3px solid #b8b8b8; border-radius:50%; -webkit-border-radius:50%; margin: 0 auto;}
+.menu .topInfo .photo p img{ max-width: 100%;}
+.menu .topInfo .photo span{ font-weight: bold; display: block; text-align: center; color: #565656; line-height: 2em; text-shadow: 0px 0px 4px white;}
+
+.utopPhone{}
+.utopPhone span{ overflow:hidden; display:block; width:80px; height:80px; border:5px solid #ffe4b0; border-radius:50%; -webkit-border-radius:50%; margin:13px auto 0}
+
+.menu-section{;}
+.menu-section-list{padding:0;margin: 10px 0;list-style:none;  border-top: 1px solid #e1e1e1;}
+.menu-section-list a{display: block; line-height: 40px; padding-left: 30px; border-bottom: 1px solid #e1e1e1; color: #4f4f4f;  border-left:5px solid #eaeaea;}
 .menu-section-list a:hover{background-color: rgba(255, 255, 255, 0.1);text-decoration: none;}
+.menu-section-list a.active{ background: #2a2a34; color: #e7e7e7;/* 皮肤 */ border-left:5px solid #92cb20; }
 
 .menu,
 .slideout-menu{position: fixed;left: 0;top: 0;bottom: 0;right: 0;z-index: 0;width: 256px;overflow-y: scroll;-webkit-overflow-scrolling: touch;display: none;}

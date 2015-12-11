@@ -26,8 +26,8 @@
       <file leaf-file-name="basic.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/basic.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.107143" vertical-offset="1140" max-vertical-offset="2204">
-              <caret line="69" column="35" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
+            <state vertical-scroll-proportion="-7.464286" vertical-offset="380" max-vertical-offset="1900">
+              <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -38,8 +38,8 @@
       <file leaf-file-name="common.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36966825" vertical-offset="2276" max-vertical-offset="3591">
-              <caret line="128" column="17" selection-start-line="128" selection-start-column="17" selection-end-line="128" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.78229666" vertical-offset="2371" max-vertical-offset="3686">
+              <caret line="142" column="156" selection-start-line="142" selection-start-column="156" selection-end-line="142" selection-end-column="156" />
               <folding />
             </state>
           </provider>
@@ -60,6 +60,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-5.9375" vertical-offset="1482" max-vertical-offset="1938">
               <caret line="93" column="12" selection-start-line="93" selection-start-column="12" selection-end-line="93" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/layout.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="40" max-vertical-offset="475">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -98,8 +108,8 @@
       <file leaf-file-name="user.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://D:/东方国信/倒三角/2015第四季度/切图/triangle_four/css/user.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="2261">
-              <caret line="50" column="142" selection-start-line="50" selection-start-column="115" selection-end-line="50" selection-end-column="142" />
+            <state vertical-scroll-proportion="-3.7708333" vertical-offset="332" max-vertical-offset="2261">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -161,9 +171,9 @@
         <option value="$PROJECT_DIR$/demo-mobile/toolbar/basic.html" />
         <option value="$PROJECT_DIR$/demo-mobile/toolbar/button.html" />
         <option value="$PROJECT_DIR$/demo-mobile/toolbar/menu.html" />
-        <option value="$PROJECT_DIR$/js/layout.js" />
         <option value="$PROJECT_DIR$/html/lead_img.html" />
         <option value="$PROJECT_DIR$/demo-mobile/button/group.html" />
+        <option value="$PROJECT_DIR$/js/layout.js" />
         <option value="$PROJECT_DIR$/html/basic.html" />
         <option value="$PROJECT_DIR$/css/common.css" />
       </list>
@@ -371,28 +381,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MobileHtml" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="neimengMobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="metro-orange" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -493,7 +481,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40519482" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -826,14 +814,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/layout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="456">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/lead_img.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.607142" vertical-offset="0" max-vertical-offset="627">
@@ -921,18 +901,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/layout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="40" max-vertical-offset="475">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://D:/东方国信/倒三角/2015第四季度/切图/triangle_four/css/user.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="2261">
-          <caret line="50" column="142" selection-start-line="50" selection-start-column="115" selection-end-line="50" selection-end-column="142" />
+        <state vertical-scroll-proportion="-3.7708333" vertical-offset="332" max-vertical-offset="2261">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/basic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.107143" vertical-offset="1140" max-vertical-offset="2204">
-          <caret line="69" column="35" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
+        <state vertical-scroll-proportion="-7.464286" vertical-offset="380" max-vertical-offset="1900">
+          <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
           <folding>
             <element signature="n#style#0;n#div#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -941,8 +929,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36966825" vertical-offset="2276" max-vertical-offset="3591">
-          <caret line="128" column="17" selection-start-line="128" selection-start-column="17" selection-end-line="128" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.78229666" vertical-offset="2371" max-vertical-offset="3686">
+          <caret line="142" column="156" selection-start-line="142" selection-start-column="156" selection-end-line="142" selection-end-column="156" />
           <folding />
         </state>
       </provider>
