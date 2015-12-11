@@ -59,23 +59,19 @@
 <div id="main" class="panel">
 	<div class="easyui-navpanel"  >
         <header>
-            <div class="m-toolbar">
-                <div class="m-title">Layout</div>
-                <div class="m-left">
-                    <a href="javascript:void(0)" class="easyui-linkbutton js-slideout-toggle" plain="true" outline="true">Back</a>
-                </div>
-                <div class="m-right">
-                    <a href="javascript:void(0)" class="easyui-linkbutton " iconCls="icon-search" plain="true" outline="true">Search</a>
-                </div>
-            </div>
-
+            <ul class="topTab colGroup">
+				<li><a href="javascript:void(0)" class="active" >日指标</a></li>
+                <li><a href="javascript:void(0)" class="" >月指标</a></li>
+                <li><a href="javascript:void(0)" class="" >季度指标</a></li>
+			</span>
         </header>
         <footer>
             <div class="m-buttongroup m-buttongroup-justified" style="width:100%">
-                <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-large-picture',size:'large',iconAlign:'top',plain:true">Picture</a>
-                <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-large-clipart',size:'large',iconAlign:'top',plain:true">Clip Art</a>
-                <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-large-shapes',size:'large',iconAlign:'top',plain:true">Shapes</a>
-                <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-large-smartart',size:'large',iconAlign:'top',plain:true">SmartArt</a>
+                <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-large-picture',size:'large',iconAlign:'top',plain:true">首页</a>
+                <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-large-clipart',size:'large',iconAlign:'top',plain:true">用户概况</a>
+                <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-large-shapes',size:'large',iconAlign:'top',plain:true">销售品</a>
+                <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-large-smartart',size:'large',iconAlign:'top',plain:true">4G</a>
+                <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-large-chart',size:'large',iconAlign:'top',plain:true">终端</a>
             </div>
         </footer>
         <div id="center">
@@ -102,10 +98,9 @@
             window.location.href="http://www.baidu.com";
         }
     });
-    document.querySelector('.js-slideout-toggle').addEventListener('click', function() {
+    /*document.querySelector('.js-slideout-toggle').addEventListener('click', function() {
         slideout.toggle();
-
-    });
+    });*/
     document.querySelector('.menu').addEventListener('click', function(eve) {
         slideout.close();
     });

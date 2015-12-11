@@ -1,6 +1,42 @@
 @charset "utf-8";
-html,body{width: 100%;height: 100%; margin:0; padding:0; font-family:tahoma, arial, 'Hiragino Sans GB', \5b8b\4f53, sans-serif !important;}
 
+html,body{width: 100%;height: 100%; margin:0; padding:0; font-family:tahoma, arial, 'Hiragino Sans GB', \5b8b\4f53, sans-serif !important;}
+code{ display:block;}
+
+a:link, a:visited{ text-decoration:none;}
+a:hover, a:focus, a:active{ text-decoration:underline;}
+
+a, abbr, acronym, address, applet, article, aside, audio,
+b, blockquote, big, body,
+center, canvas, caption, cite, code, command,
+datalist, dd, del, details, dfn, dl, div, dt,
+em, embed,
+fieldset, figcaption, figure, font, footer, form,
+h1, h2, h3, h4, h5, h6, header, hgroup, html,
+i, iframe, img, ins,
+kbd,
+keygen,
+label, legend, li,
+meter,
+nav, menu,
+object, ol, output,
+p, pre, progress,
+q,
+s, samp, section, small, span, source, strike, strong, sub, sup,
+table, tbody, tfoot, thead, th, tr, tdvideo, tt,
+u, ul,
+var{ margin:0; padding:0;}
+
+h1, h2, h3, h4, h5, h6, th, td, table, input, button, select, textarea{ font-size:1em;}
+body, input, button, select, textarea{}
+em, cite, address, optgroup{ font-style:normal;}
+kbd, samp, code{ font-family:monospace;}
+
+img, input, button, select, textarea{ vertical-align:middle;}
+ul, ol{ list-style:none;}
+img, fieldset{ border:0;}
+abbr, acronym{ border-bottom:1px dotted black; cursor:help;}
+table{ width:100%;  border-collapse:collapse; border-spacing:0;}
 /*清除浮动*/
 .group:after{content:".";display:block;visibility:hidden;clear:both;height:0;}
 .group{display:inline-block;}
@@ -126,3 +162,21 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 .lead_guide img{position:absolute; top:50%;left:50%;transform:translate(-50%,-50%);}
 .lead_guide a{ text-decoration:none;font-size: 1em; top: 20px; right: 20px; position: absolute; z-index: 2; display:inline-block; border-radius:5px; color: #fff; background: #b7b7b7; line-height: 20px; text-align: center; padding: 5px; height: 20px;}
 
+/* 平均布局 */
+.colGroup{display:box; /* OLD - Android 4.4- */ display:-webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display:-moz-box; /* OLD - Firefox 19- (buggy but mostly works) */display:-ms-flexbox; /* TWEENER - IE 10 */display:-webkit-flex; /* NEW - Chrome */display:flex;}
+.colInner,
+.colGroup li{-webkit-box-flex:1; /* OLD - iOS 6-, Safari 3.1-6 */ -moz-box-flex:1; /* OLD - Firefox 19- */-webkit-flex:1; /* Chrome */ -ms-flex:1; /* IE 10 */flex:1;}
+
+
+/* tab 组 */
+.panel-header{padding: 5px; background: #dedede; border: none;}
+.topTab{ }
+.topTab li a{ display: block; text-align; height: 38px; line-height: 38px; border-radius: 2px; text-align:  center; color: #565656; background: #ffffff; margin: 0 2px; text-decoration: none;}
+.topTab li a.active{ color: #fff;background: #92cb20;}
+
+
+/* 底部图标 */
+
+.panel-footer{ border-top: 1px solid #cccccc; background:#fdfdfd;}
+.m-buttongroup .l-btn-icon{ background-size:32px auto;}
+.m-buttongroup .l-btn-text{ color: #8d8d8d;}
