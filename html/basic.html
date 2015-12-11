@@ -98,20 +98,17 @@
     target.style.webkitTransition = 'all ease 0.2s';
 
     touch.on(target, 'swipeleft', function(ev){
-       // this.style.webkitTransform = "translate3d(-" + this.offsetLeft + "px,0,0)";
-
-
+        var display = $(".slideout-menu").css("display");
+        if(display=="none"){
             window.location.href="http://www.baidu.com";
-
-
-
+        }
     });
     document.querySelector('.js-slideout-toggle').addEventListener('click', function() {
         slideout.toggle();
 
     });
     document.querySelector('.menu').addEventListener('click', function(eve) {
-        if (eve.target.nodeName === 'A') { slideout.close(); }
+        slideout.close();
     });
     function aload(t){ "use strict";t=t||window.document.querySelectorAll("[data-aload]"),void 0===t.length&&(t=[t]);var a,e=0,r=t.length;for(e;r>e;e+=1)a=t[e],a["LINK"!==a.tagName?"src":"href"]=a.getAttribute("data-aload"),a.removeAttribute("data-aload");return t;}
 
