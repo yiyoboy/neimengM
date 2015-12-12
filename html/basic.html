@@ -13,10 +13,7 @@
     <script type="text/javascript" src="../js/jquery.easyui.mobile.js"></script>
     <script type="text/javascript" src="../js/slideout.min.js"></script>
     <script type="text/javascript" src="../js/touch.min.js"></script>
-    <!--<script type="text/javascript" src="../js/layout.js"></script>-->
-
-
-
+    <script type="text/javascript" src="../js/layout.js"></script>
 </head>
 <body>
 <nav id="menu" class="menu">
@@ -29,10 +26,10 @@
 
     <section class="menu-section">
         <ul class="menu-section-list">
-            <li><a href="#" class="active" target="_blank">Installation</a></li>
-            <li><a href="#" target="_blank">Usage</a></li>
-            <li><a href="#" target="_blank">API</a></li>
-            <li><a href="#" target="_blank">npm-scripts</a></li>
+            <li><a href="javascript:void(0)" class="active">Installation</a></li>
+            <li><a href="javascript:void(0)" >Usage</a></li>
+            <li><a href="javascript:void(0)" >API</a></li>
+            <li><a href="javascript:void(0)">npm-scripts</a></li>
         </ul>
     </section>
 </nav>
@@ -43,7 +40,7 @@
 	<div class="easyui-navpanel"  >
         <header>
             <ul class="topTab colGroup">
-				<li><a href="javascript:void(0)" class="active" >日指标</a></li>
+				<li><a href="javascript:void(0)"  class="active">日指标</a></li>
                 <li><a href="javascript:void(0)" class="" >月指标</a></li>
                 <li><a href="javascript:void(0)" class="" >季度指标</a></li>
 			</span>
@@ -89,6 +86,7 @@
         slideout.close();
     });
     function aload(t){ "use strict";t=t||window.document.querySelectorAll("[data-aload]"),void 0===t.length&&(t=[t]);var a,e=0,r=t.length;for(e;r>e;e+=1)a=t[e],a["LINK"!==a.tagName?"src":"href"]=a.getAttribute("data-aload"),a.removeAttribute("data-aload");return t;}
+
 
 </script>
 </body>
