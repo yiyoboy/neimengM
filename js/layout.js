@@ -2,6 +2,7 @@ $(function(){
     /* tab 切换 */
    tabMenu(".topTab","active");
    tabMenu(".menu-section-list","active");
+   tabMenu(".topNav","active");
 
 
 })

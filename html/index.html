@@ -45,21 +45,39 @@
 <div id="main" class="panel">
     <!--easyui布局-->
 	<div class="easyui-navpanel"  >
-        <!--页面内容框架-->
-        <div id="center">
+        <!--头部导航菜单-->
+        <header class="topNavGuide">
             <!-- Swiper -->
-            <div class="swiper-container">
+            <div class="swiper-container ">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <ul>
-                            <li></li>
+                        <ul class="topNav">
+                            <li><a href="javascript:void(0)" class="icon01">图标1</a><span>我的收入</span></li>
+                            <li><a href="javascript:void(0)" class="icon02">图标2</a><span>我的成本</span></li>
+                            <li><a href="javascript:void(0)" class="icon03">图标3</a><span>移动用户</span></li>
+                            <li><a href="javascript:void(0)" class="icon04">图标4</a><span>固网用户</span></li>
+                            <li><a href="javascript:void(0)" class="icon05">图标5</a><span>我的考核</span></li>
+                            <li><a href="javascript:void(0)" class="icon06">图标6</a><span>我的支撑</span></li>
                         </ul>
-
                     </div>
-                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">
+                        <ul class="topNav">
+                            <li><a href="javascript:void(0)" class="icon01">图标1</a><span>我的收入</span></li>
+                            <li><a href="javascript:void(0)" class="icon02">图标2</a><span>我的成本</span></li>
+                            <li><a href="javascript:void(0)" class="icon03">图标3</a><span>移动用户</span></li>
+                            <li><a href="javascript:void(0)" class="icon04">图标4</a><span>固网用户</span></li>
+                            <li><a href="javascript:void(0)" class="icon05">图标5</a><span>我的考核</span></li>
+                            <li><a href="javascript:void(0)" class="icon06">图标6</a><span>我的支撑</span></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <!-- //Swiper -->
+            <h3><strong>近七日重点指标趋势</strong><span class="arrow-down"><span class="arrow-down"></span></span></h3>
+        </header>
+        <!--//头部导航菜单-->
+        <!--页面内容框架-->
+        <div id="center">
         </div>
         <!--//页面内容框架-->
     </div>
@@ -82,13 +100,12 @@
             window.location.href="http://www.baidu.com";
         }
     });
-    /*document.querySelector('.js-slideout-toggle').addEventListener('click', function() {
-     slideout.toggle();
-     });*/
+    /*document.querySelector('.js-slideout-toggle').addEventListener('click', function() {slideout.toggle();});*/
     document.querySelector('.menu').addEventListener('click', function(eve) {
         slideout.close();
     });
     function aload(t){ "use strict";t=t||window.document.querySelectorAll("[data-aload]"),void 0===t.length&&(t=[t]);var a,e=0,r=t.length;for(e;r>e;e+=1)a=t[e],a["LINK"!==a.tagName?"src":"href"]=a.getAttribute("data-aload"),a.removeAttribute("data-aload");return t;}
+
     /* 滚动菜单 */
     var swiper = new Swiper('.swiper-container');
 </script>
