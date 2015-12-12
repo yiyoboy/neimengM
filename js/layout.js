@@ -2,6 +2,8 @@ $(function(){
     /* tab 切换 */
    tabMenu(".topTab","active");
    tabMenu(".menu-section-list","active");
+
+
 })
 /* menu 切换效果 */
 function tabMenu(className,activeName){
