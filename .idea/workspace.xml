@@ -23,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="basic.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="basic.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/basic.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8661765" vertical-offset="114" max-vertical-offset="1938">
-              <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+            <state vertical-scroll-proportion="-14.25" vertical-offset="285" max-vertical-offset="1976">
+              <caret line="36" column="65" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="65" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -38,29 +38,21 @@
       <file leaf-file-name="common.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2371" max-vertical-offset="3686">
-              <caret line="140" column="16" selection-start-line="140" selection-start-column="16" selection-end-line="140" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2329" max-vertical-offset="3819">
+              <caret line="142" column="283" selection-start-line="142" selection-start-column="283" selection-end-line="142" selection-end-column="283" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mobile.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/themes/mobile.css">
+      <file leaf-file-name="lead_img.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/lead_img.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="6611" max-vertical-offset="7258">
-              <caret line="358" column="26" selection-start-line="358" selection-start-column="26" selection-end-line="358" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="icon.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/themes/icon.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1767" max-vertical-offset="1938">
-              <caret line="93" column="12" selection-start-line="93" selection-start-column="12" selection-end-line="93" selection-end-column="17" />
-              <folding />
+            <state vertical-scroll-proportion="0.6811189" vertical-offset="26" max-vertical-offset="741">
+              <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -70,56 +62,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="627">
               <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lead_img.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/lead_img.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.571428" vertical-offset="0" max-vertical-offset="741">
-              <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="easyui.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/themes/metro-orange/easyui.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="48" max-vertical-offset="53903">
-              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://D:/东方国信/易申软件/前台include框架 v2.0/WebRoot/css/default.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="1254">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="39" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Demo_example.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://D:/东方国信/倒三角/2015第四季度/切图/triangle_four/Demo_example.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="19" max-vertical-offset="7790">
-              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://D:/东方国信/倒三角/2015第四季度/切图/triangle_four/css/user.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2261">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -182,10 +124,10 @@
         <option value="$PROJECT_DIR$/demo-mobile/toolbar/button.html" />
         <option value="$PROJECT_DIR$/demo-mobile/toolbar/menu.html" />
         <option value="$PROJECT_DIR$/demo-mobile/button/group.html" />
-        <option value="$PROJECT_DIR$/css/common.css" />
-        <option value="$PROJECT_DIR$/html/lead_img.html" />
         <option value="$PROJECT_DIR$/js/layout.js" />
         <option value="$PROJECT_DIR$/html/basic.html" />
+        <option value="$PROJECT_DIR$/css/common.css" />
+        <option value="$PROJECT_DIR$/html/lead_img.html" />
       </list>
     </option>
   </component>
@@ -862,22 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2371" max-vertical-offset="3686">
-          <caret line="140" column="16" selection-start-line="140" selection-start-column="16" selection-end-line="140" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/lead_img.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.571428" vertical-offset="0" max-vertical-offset="741">
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/layout.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="627">
@@ -886,12 +812,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2329" max-vertical-offset="3819">
+          <caret line="142" column="283" selection-start-line="142" selection-start-column="283" selection-end-line="142" selection-end-column="283" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html/basic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8661765" vertical-offset="114" max-vertical-offset="1938">
-          <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+        <state vertical-scroll-proportion="-14.25" vertical-offset="285" max-vertical-offset="1976">
+          <caret line="36" column="65" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="65" />
           <folding>
             <element signature="n#style#0;n#div#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/lead_img.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6811189" vertical-offset="26" max-vertical-offset="741">
+          <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
