@@ -36,8 +36,8 @@
       <file leaf-file-name="basic.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/basic.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.855263" vertical-offset="2367" max-vertical-offset="4104">
-              <caret line="156" column="29" selection-start-line="156" selection-start-column="29" selection-end-line="156" selection-end-column="29" />
+            <state vertical-scroll-proportion="-4.355263" vertical-offset="1569" max-vertical-offset="5586">
+              <caret line="100" column="36" selection-start-line="100" selection-start-column="36" selection-end-line="100" selection-end-column="36" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -48,8 +48,18 @@
       <file leaf-file-name="common.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.72140765" vertical-offset="5360" max-vertical-offset="6080">
-              <caret line="308" column="52" selection-start-line="308" selection-start-column="52" selection-end-line="308" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.61143696" vertical-offset="3554" max-vertical-offset="6308">
+              <caret line="209" column="49" selection-start-line="209" selection-start-column="49" selection-end-line="209" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="easyui.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/themes/metro-orange/easyui.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.9166666" vertical-offset="8889" max-vertical-offset="53903">
+              <caret line="463" column="21" selection-start-line="463" selection-start-column="15" selection-end-line="463" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -402,6 +412,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobileHtml" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neimengMobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="metro-orange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -736,14 +768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/themes/metro-orange/easyui.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="48" max-vertical-offset="53903">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/themes/icon.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1767" max-vertical-offset="1938">
@@ -905,18 +929,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/basic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.855263" vertical-offset="2367" max-vertical-offset="4104">
-          <caret line="156" column="29" selection-start-line="156" selection-start-column="29" selection-end-line="156" selection-end-column="29" />
+        <state vertical-scroll-proportion="-4.355263" vertical-offset="1569" max-vertical-offset="5586">
+          <caret line="100" column="36" selection-start-line="100" selection-start-column="36" selection-end-line="100" selection-end-column="36" />
           <folding>
             <element signature="n#style#0;n#div#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/themes/metro-orange/easyui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.9166666" vertical-offset="8889" max-vertical-offset="53903">
+          <caret line="463" column="21" selection-start-line="463" selection-start-column="15" selection-end-line="463" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72140765" vertical-offset="5360" max-vertical-offset="6080">
-          <caret line="308" column="52" selection-start-line="308" selection-start-column="52" selection-end-line="308" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.61143696" vertical-offset="3554" max-vertical-offset="6308">
+          <caret line="209" column="49" selection-start-line="209" selection-start-column="49" selection-end-line="209" selection-end-column="49" />
           <folding />
         </state>
       </provider>
