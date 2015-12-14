@@ -26,8 +26,8 @@
       <file leaf-file-name="basic.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/basic.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.8157895" vertical-offset="907" max-vertical-offset="2413">
-              <caret line="59" column="129" selection-start-line="59" selection-start-column="129" selection-end-line="59" selection-end-column="129" />
+            <state vertical-scroll-proportion="-2.5657895" vertical-offset="907" max-vertical-offset="2489">
+              <caret line="58" column="33" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="33" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -35,93 +35,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.071428" vertical-offset="551" max-vertical-offset="2565">
-              <caret line="63" column="43" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="date.htm" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://D:/东方国信/内蒙手机经分/js 使用/pickadate.js(www.jq22.com)/pickadate.js-3.3.2/date.htm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="12768">
-              <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://D:/东方国信/内蒙手机经分/js 使用/pickadate.js(www.jq22.com)/pickadate.js-3.3.2/lib/themes/default.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2623" max-vertical-offset="3420">
-              <caret line="174" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default.date.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://D:/东方国信/内蒙手机经分/js 使用/pickadate.js(www.jq22.com)/pickadate.js-3.3.2/lib/themes/default.date.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5396">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="278" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://D:/东方国信/内蒙手机经分/js 使用/pickadate.js(www.jq22.com)/pickadate.js-3.3.2/demo/styles/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.8125" vertical-offset="14178" max-vertical-offset="25023">
-              <caret line="771" column="0" selection-start-line="771" selection-start-column="0" selection-end-line="829" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="common.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36212122" vertical-offset="6905" max-vertical-offset="11229">
-              <caret line="376" column="22" selection-start-line="376" selection-start-column="22" selection-end-line="376" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.40615836" vertical-offset="7380" max-vertical-offset="10412">
+              <caret line="403" column="1" selection-start-line="403" selection-start-column="1" selection-end-line="403" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default.time.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://D:/东方国信/内蒙手机经分/js 使用/pickadate.js(www.jq22.com)/pickadate.js-3.3.2/lib/themes/default.time.css">
+      <file leaf-file-name="layout.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/layout.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1711" max-vertical-offset="2432">
-              <caret line="108" column="1" selection-start-line="108" selection-start-column="1" selection-end-line="108" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="message.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo-mobile/dialog/message.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.107142" vertical-offset="163" max-vertical-offset="893">
-              <caret line="22" column="70" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lead_img.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/lead_img.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.392857" vertical-offset="45" max-vertical-offset="760">
-              <caret line="28" column="22" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="1045">
+              <caret line="29" column="70" selection-start-line="29" selection-start-column="70" selection-end-line="29" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -184,9 +112,9 @@
         <option value="$PROJECT_DIR$/demo-mobile/button/group.html" />
         <option value="$PROJECT_DIR$/demo-mobile/datalist/basic.html" />
         <option value="$PROJECT_DIR$/html/lead_img.html" />
-        <option value="$PROJECT_DIR$/js/layout.js" />
         <option value="$PROJECT_DIR$/html/index.html" />
         <option value="$PROJECT_DIR$/html/basic.html" />
+        <option value="$PROJECT_DIR$/js/layout.js" />
         <option value="$PROJECT_DIR$/css/common.css" />
       </list>
     </option>
@@ -558,7 +486,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="变化" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -601,20 +529,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/demo-mobile/button/style.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.071429" vertical-offset="0" max-vertical-offset="836">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="12" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-mobile/button/switch.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.142858" vertical-offset="0" max-vertical-offset="950">
-          <caret line="12" column="83" selection-start-line="12" selection-start-column="83" selection-end-line="12" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo-mobile/datagrid/rowediting.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.142858" vertical-offset="0" max-vertical-offset="2090">
@@ -783,13 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo-mobile/button/group.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.428571" vertical-offset="323" max-vertical-offset="1254">
-          <caret line="25" column="19" selection-start-line="21" selection-start-column="12" selection-end-line="25" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo-mobile/toolbar/menu.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="10.857142" vertical-offset="836" max-vertical-offset="1558">
@@ -868,6 +775,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46849316" vertical-offset="0" max-vertical-offset="730">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -875,14 +783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1254" max-vertical-offset="1425">
           <caret line="66" column="49" selection-start-line="66" selection-start-column="3" selection-end-line="66" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/layout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
-          <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -900,7 +800,7 @@
         <state vertical-scroll-proportion="-9.107142" vertical-offset="163" max-vertical-offset="893">
           <caret line="22" column="70" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -921,17 +821,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/东方国信/内蒙手机经分/js 使用/pickadate.js(www.jq22.com)/pickadate.js-3.3.2/lib/themes/default.time.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1711" max-vertical-offset="2432">
+          <caret line="108" column="1" selection-start-line="108" selection-start-column="1" selection-end-line="108" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-mobile/button/switch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6785714" vertical-offset="209" max-vertical-offset="950">
+          <caret line="12" column="83" selection-start-line="12" selection-start-column="83" selection-end-line="12" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-mobile/button/style.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6785714" vertical-offset="95" max-vertical-offset="836">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="12" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-mobile/button/group.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.535714" vertical-offset="323" max-vertical-offset="1254">
+          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://D:/东方国信/内蒙手机经分/js 使用/pickadate.js(www.jq22.com)/pickadate.js-3.3.2/demo/styles/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.8125" vertical-offset="14178" max-vertical-offset="25023">
+        <state vertical-scroll-proportion="0.67769784" vertical-offset="14178" max-vertical-offset="25023">
           <caret line="771" column="0" selection-start-line="771" selection-start-column="0" selection-end-line="829" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/东方国信/内蒙手机经分/js 使用/pickadate.js(www.jq22.com)/pickadate.js-3.3.2/lib/themes/default.date.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5396">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="278" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://D:/东方国信/内蒙手机经分/js 使用/pickadate.js(www.jq22.com)/pickadate.js-3.3.2/lib/themes/default.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2623" max-vertical-offset="3420">
+        <state vertical-scroll-proportion="0.9192463" vertical-offset="2623" max-vertical-offset="3420">
           <caret line="174" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
           <folding />
         </state>
@@ -945,26 +885,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/东方国信/内蒙手机经分/js 使用/pickadate.js(www.jq22.com)/pickadate.js-3.3.2/lib/themes/default.date.css">
+    <entry file="file://$PROJECT_DIR$/js/layout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5396">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="278" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/东方国信/内蒙手机经分/js 使用/pickadate.js(www.jq22.com)/pickadate.js-3.3.2/lib/themes/default.time.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1711" max-vertical-offset="2432">
-          <caret line="108" column="1" selection-start-line="108" selection-start-column="1" selection-end-line="108" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="1045">
+          <caret line="29" column="70" selection-start-line="29" selection-start-column="70" selection-end-line="29" selection-end-column="70" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/basic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.8157895" vertical-offset="907" max-vertical-offset="2413">
-          <caret line="59" column="129" selection-start-line="59" selection-start-column="129" selection-end-line="59" selection-end-column="129" />
+        <state vertical-scroll-proportion="-2.5657895" vertical-offset="907" max-vertical-offset="2489">
+          <caret line="58" column="33" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="33" />
           <folding>
             <element signature="n#style#0;n#div#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -973,8 +905,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36212122" vertical-offset="6905" max-vertical-offset="11229">
-          <caret line="376" column="22" selection-start-line="376" selection-start-column="22" selection-end-line="376" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.40615836" vertical-offset="7380" max-vertical-offset="10412">
+          <caret line="403" column="1" selection-start-line="403" selection-start-column="1" selection-end-line="403" selection-end-column="1" />
           <folding />
         </state>
       </provider>

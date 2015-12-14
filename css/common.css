@@ -228,24 +228,17 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 .charBox{ border-bottom: 2px solid #e5e5e5; min-height:200px; padding: 5px; background-color: #ffffff; }
 
 /* 日历样式 */
-/**
- * Groups of fields
- */
-
-.fieldset--demo {
-    background: #ffffff;
-}
-
-
+.dateGuide{ position: relative;}
+.dateGuide a.toggleBtn{ position: absolute; top: 8px; right: 5px; width: 30px; height: 30px; text-indent: -5000px; background: url("../images/common/toggle_ico02.png") center center no-repeat; background-size: 30px 30px;}
+.dateGuide a.toggleBtn.open{background-image: url("../images/common/toggle_ico01.png");}
 
 /**
  * Note: the root picker element should *NOT* be styled more than what’s here.
  */
 .picker {
-    font-size: 16px;
     text-align: left;
     line-height: 1.2;
-    color: #000000;
+    color: #4c4c4c;
     user-select: none;
 }
 /**
@@ -265,70 +258,19 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
  */
 .picker__holder {
     width: 100%;
-    overflow-y: auto;
     -webkit-overflow-scrolling: touch;
 }
 
-/*!
- * Default mobile-first, responsive styling for pickadate.js
- * Demo: http://amsul.github.io/pickadate.js
- */
-/**
- * Note: the root picker element should *NOT* be styled more than what’s here.
- */
-/**
- * Make the holder and frame fullscreen.
- */
-.picker__holder,
-.picker__frame {
-}
-/**
- * The holder should overlay the entire screen.
- */
-.picker__holder {
-  }
-/**
- * The frame that bounds the box contents of the picker.
- */
-.picker__frame {
-    width: 100%;
-}
-
-/**
- * The wrapper sets the stage to vertically align the box contents.
- */
-.picker__wrap {
-    display: table;
-    width: 100%;
-    height: 100%;
-}
 
 /**
  * The box contains all the picker contents.
  */
 .picker__box {
     background: #ffffff;
-    display: table-cell;
     vertical-align: middle;
 }
-@media (min-height: 26.5em) {
-    .picker__box {
-        font-size: 1.25em;
-    }
-}
-@media (min-height: 33.875em) {
-    .picker__box {
-        display: block;
-        font-size: 1em;
-        border-top-color: #898989;
-        border-bottom-width: 0;
-    }
-}
-@media (min-height: 40.125em) {
-    .picker__box {
-        font-size: 1em;
-    }
-}
+
+
 /**
  * When the picker opens...
  */
@@ -364,7 +306,8 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
  * The picker box.
  */
 .picker__box {
-
+ width: 100%;
+    display: block;;
 }
 /**
  * The header containing the month and year stuff.
@@ -372,9 +315,10 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 .picker__header {
     position: relative;
     font-size:1em;
-    height: 40px;
+    height: 50px;
     color: #b1d95f;
-    line-height: 40px;
+    line-height: 50px;
+    text-align: center;
 }
 /**
  * The month and year labels.
@@ -384,6 +328,7 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
     display: inline-block;
     padding:0 5px;
     border-radius: 5px;
+    font-size: 18px;
 }
 .picker__year {
 
@@ -398,16 +343,16 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
     padding: .5em 1.25em;
     width: 1em;
     height: 1em;
-    top: -0.25em;
+    top: .5em;
 }
 
 .picker__nav--prev {
-    left: -1em;
+    left: 1.5em;
     padding-right: 1.25em;
 }
 
 .picker__nav--next {
-    right: -1em;
+    right: 1.5em;
     padding-left: 1.25em;
 }
 
@@ -416,7 +361,7 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
     content: " ";
     border-top: .5em solid transparent;
     border-bottom: .5em solid transparent;
-    border-right: 0.75em solid #000000;
+    border-right: 0.75em solid #92cc1f;
     width: 0;
     height: 0;
     display: block;
@@ -424,7 +369,7 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 }
 .picker__nav--next:before {
     border-right: 0;
-    border-left: 0.75em solid #000000;
+    border-left: 0.75em solid #92cc1f;
 }
 .picker__nav--prev:hover,
 .picker__nav--next:hover {
@@ -448,9 +393,9 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
     text-align: center;
     border-collapse: collapse;
     border-spacing: 0;
-    table-layout: fixed;
     font-size: inherit;
     width: 100%;
+    display: block;
 }
 
 .picker__table td {
@@ -462,10 +407,13 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
  */
 .picker__weekday {
     width: 14.285714286%;
-    font-size: .75em;
+    font-size: 1em;
     padding-bottom: .25em;
     color: #999999;
     font-weight: 500;
+    background: #fdfdfd;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 5px 0;
     /* Increase the spacing a tad */
 
 }
@@ -476,31 +424,39 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 .picker__day {
     padding: .3125em 0;
     font-weight: 200;
-    border: 1px solid transparent;
+    font-size: 1em;
+
 }
 .picker__day--today {
-    color: #0089ec;
-    position: relative;
+    width: 30px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #bfbec3;
+    color:#ffffff;
 }
 .picker__day--today:before {
-    content: " ";
+    content: "";
     position: absolute;
-    top: 2px;
-    right: 2px;
+    top:-2px;
+    right:-2px;
     width: 0;
     height: 0;
-    border-top: 0.5em solid #0059bc;
-    border-left: .5em solid transparent;
+    border-radius: 50%;
+    border: 0.2em solid #92cc20;
 }
 .picker__day--selected,
 .picker__day--selected:hover {
-    border-color: #0089ec;
+    width: 30px;
+     margin: 0 auto;
+    border-radius: 50%;
+   background-color: #92cc20;
+    color:#ffffff;
 }
 .picker__day--highlighted {
-    background: #b1dcfb;
+
 }
 .picker__day--disabled:before {
-    border-top-color: #aaaaaa;
+
 }
 .picker__day--outfocus {
     color: #dddddd;
@@ -532,6 +488,7 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
  */
 .picker__footer {
     text-align: center;
+    display: none;
 }
 .picker__button--today,
 .picker__button--clear {
