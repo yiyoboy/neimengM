@@ -27,16 +27,16 @@ function toggleBox (btnName,activeName){
     $(btnName).click(function(){
         var panelBodyH = $(".panel-body").height();
         var dateH = $(".dateHeader").height();
-        if(dateH > 90){
+        if(dateH > 130){
            $(this).addClass(activeName);
-            $(".panel-body").height(panelBodyH+235);
-            $(".dateHeader").height(90);
+            $(".panel-body").height(panelBodyH+238);
+            $(".dateHeader").height(130);
         }
         else
         {
             $(this).removeClass(activeName);
-            $(".panel-body").height(panelBodyH-235);
-            $(".dateHeader").height(325);
+            $(".panel-body").height(panelBodyH-238);
+            $(".dateHeader").height(368);
         }
 
     })

@@ -241,13 +241,13 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 
 /* 日历样式 */
 
-.dateHeader{ height:325px;border-bottom: 1px solid #e5e5e5;overflow: hidden;}
+.dateHeader{ height:368px;border-bottom: 1px solid #e5e5e5;overflow: hidden;}
 .dateGuide{ position: relative; }
 .dateGuide a.toggleBtn{ position: absolute; top: 8px; right: 5px; width: 30px; height: 30px; text-indent: -5000px; background: url("../images/common/toggle_ico02.png") center center no-repeat; background-size: 30px 30px;}
 .dateGuide a.toggleBtn.open{background-image: url("../images/common/toggle_ico01.png");}
 
 /** * Note: the root picker element should *NOT* be styled more than what’s here. */
-.picker{text-align: left; line-height: 1.2; color: #4c4c4c; user-select: none;}
+.picker{text-align: left; line-height: 1.2; color: #4c4c4c; user-select: none; border-bottom: 1px solid #e5e5e5;}
 /** * The picker input element. */
 .picker__input{cursor: default;}
 /** * When the picker is opened, the input element is “activated”. */
@@ -312,8 +312,8 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 
 /* 指标内容 */
 .tableGuide{ background-color: #fcfcfc;}
-.tableTitle { position: relative;}
-.tableTitle h3{ font-size: 14px; font-weight: normal; border-bottom: 1px solid #333333; height: 40px; line-height: 40px; color: #93cb20; padding-left: 15px; background-image: url("../images/common/title_line.png"); background-size:5px  20px;  background-repeat: no-repeat; background-position: 6px center;  }
+.tableTitle { position:absolute;bottom: 0; width: 100%; left: 0; background-color: #ffffff;}
+.tableTitle h3{ font-size: 14px; font-weight: normal; border-bottom: 1px solid #333333; border-top: 1px solid #e5e5e5; height: 40px; line-height: 40px; color: #93cb20; padding-left: 15px; background-image: url("../images/common/title_line.png"); background-size:5px  20px;  background-repeat: no-repeat; background-position: 6px center;  }
 .tableTitle a{ position:absolute;top: 10px; right: 10px; width: 16px; height: 16px; background-image: url("../images/common/ico03_menu.png");  background-position:  center center; background-repeat: no-repeat; background-size: 16px 16px;  text-indent: -5000px;}
 
 /* 指标表格 */
