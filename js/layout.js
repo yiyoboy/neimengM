@@ -19,16 +19,23 @@ function tabMenu(className,activeName){
 function toggleBox (btnName,activeName,parBox,hideBox){
     $(btnName).click(function(){
         var display = $(this).parents(parBox).find(hideBox).css("display");
-        console.log(display);
-        if(display=="block"){
+        var deHeight =$(".picker").height();
+        var preheight= $(parBox).height();
+        var panelBodyH = $(".panel-body").height();
+        if(preheight > 50){
            $(this).addClass("open");
-            $(this).parents(parBox).find(hideBox).css("display","none");
+           $(parBox).height(50);
+            $(".panel-body").height(panelBodyH+211);
+
+            $(".dateHeader").height(90);
+
         }
         else
         {
-               $(this).removeClass(activeName);
-            $(this).parents(parBox).find(hideBox).css("display","block");
-
+           $(this).removeClass(activeName);
+            $(parBox).height(deHeight);
+            $(".panel-body").height(panelBodyH-211);
+            $(".dateHeader").height(301);
         }
 
     })

@@ -49,7 +49,7 @@
     <!--easyui布局-->
 	<div class="easyui-navpanel"  >
         <!--头部tab 菜单-->
-        <header>
+        <header class="dateHeader">
             <ul class="topTab">
 				<li><a href="javascript:void(0)"  class="active">日指标</a></li>
                 <li><a href="javascript:void(0)" class="" >月指标</a></li>
@@ -58,9 +58,9 @@
             <!--日历控件-->
             <div class="dateGuide">
                 <fieldset class="fieldset">
-                    
+
                     <div><input id="" hidden="hidden" class="datepicker" type="text"> <a class="toggleBtn" href="javascript:void(0)">切换</a></div>
-                
+
                 </fieldset>
 
             </div>
@@ -90,16 +90,21 @@
 <script type="text/javascript">
     $(function(){
         //日历控件
-        $('.datepicker').pickadate(
-                {
-                monthsFull: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
-                weekdaysShort: ['日', '一', '二', '三', '四', '五', '六'],
-                month: 'picker__month',
-                 year: 'picker__year',
-                }
-        );
+        dateUse()
 
     })
+
+    function dateUse(){
+
+        $('.datepicker').pickadate(
+                {
+                    monthsFull: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+                    weekdaysShort: ['日', '一', '二', '三', '四', '五', '六'],
+                    month: 'picker__month',
+                    year: 'picker__year',
+                }
+        );
+    }
     var slideout = new Slideout({
         'panel': document.getElementById('main'),
         'menu': document.getElementById('menu'),

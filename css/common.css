@@ -192,8 +192,8 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 .panel-header{ padding: 0; border: none;}
 .topTab{ background: #fdfdfd; border: none; border-bottom: 1px solid #fafafa; text-align: center; padding-top: 5px; }
 .topTab li{ display:inline-block;}
-.topTab li a{ color: #000000; display: block; padding: 0 10px;   height: 38px; line-height: 38px;border-bottom: 2px solid #fdfdfd;  background: #fdfdfd; text-decoration: none;}
-.topTab li a.active{ /* 皮肤 */ border-bottom: 2px solid #000000;}
+.topTab li a{ color: #000000; font-size:14px; display: block; padding: 0 10px;   height: 38px; line-height: 38px;border-bottom: 2px solid #fdfdfd;  background: #fdfdfd; text-decoration: none;}
+.topTab li a.active{ /* 皮肤 */ border-bottom: 2px solid #000000; font-size: 18px;}
 
 
 /* 底部图标 */
@@ -228,7 +228,10 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 .charBox{ border-bottom: 2px solid #e5e5e5; min-height:200px; padding: 5px; background-color: #ffffff; }
 
 /* 日历样式 */
-.dateGuide{ position: relative;}
+
+.dateHeader{ height:301px;}
+.dateGuide{ position: relative;
+    overflow: hidden; border-bottom: 1px solid #e5e5e5;}
 .dateGuide a.toggleBtn{ position: absolute; top: 8px; right: 5px; width: 30px; height: 30px; text-indent: -5000px; background: url("../images/common/toggle_ico02.png") center center no-repeat; background-size: 30px 30px;}
 .dateGuide a.toggleBtn.open{background-image: url("../images/common/toggle_ico01.png");}
 
@@ -267,6 +270,7 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
  */
 .picker__box {
     background: #ffffff;
+    display: table-cell;
     vertical-align: middle;
 }
 
@@ -306,8 +310,7 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
  * The picker box.
  */
 .picker__box {
- width: 100%;
-    display: block;;
+
 }
 /**
  * The header containing the month and year stuff.
@@ -393,9 +396,9 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
     text-align: center;
     border-collapse: collapse;
     border-spacing: 0;
+    table-layout: fixed;
     font-size: inherit;
     width: 100%;
-    display: block;
 }
 
 .picker__table td {
@@ -433,6 +436,7 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
     border-radius: 50%;
     background-color: #bfbec3;
     color:#ffffff;
+    position: relative;;
 }
 .picker__day--today:before {
     content: "";
