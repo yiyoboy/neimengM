@@ -3,7 +3,8 @@ $(function(){
    tabMenu(".topTab","active");
    tabMenu(".menu-section-list","active");
    tabMenu(".topNav","active");
-   toggleBox(".toggleBtn","open",".dateGuide",".picker__table")
+   toggleBox(".toggleBtn","open")
+    toggleTable(".toggleBTable","active");
 
 })
 /* menu 切换效果 */
@@ -15,27 +16,27 @@ function tabMenu(className,activeName){
 }
 
 /* 收缩展开 */
-
-function toggleBox (btnName,activeName,parBox,hideBox){
+function toggleTable(btnName,activeName){
     $(btnName).click(function(){
-        var display = $(this).parents(parBox).find(hideBox).css("display");
-        var deHeight =$(".picker").height();
-        var preheight= $(parBox).height();
+             $(this).toggleClass(activeName);
+           $(this).parents(".tableBox").find("tbody").toggle();
+    })
+
+}
+function toggleBox (btnName,activeName){
+    $(btnName).click(function(){
         var panelBodyH = $(".panel-body").height();
-        if(preheight > 50){
-           $(this).addClass("open");
-           $(parBox).height(50);
-            $(".panel-body").height(panelBodyH+211);
-
+        var dateH = $(".dateHeader").height();
+        if(dateH > 90){
+           $(this).addClass(activeName);
+            $(".panel-body").height(panelBodyH+235);
             $(".dateHeader").height(90);
-
         }
         else
         {
-           $(this).removeClass(activeName);
-            $(parBox).height(deHeight);
-            $(".panel-body").height(panelBodyH-211);
-            $(".dateHeader").height(301);
+            $(this).removeClass(activeName);
+            $(".panel-body").height(panelBodyH-235);
+            $(".dateHeader").height(325);
         }
 
     })
