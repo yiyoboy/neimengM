@@ -173,10 +173,7 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 
 /*框架 */
 #main img,
-.lead_guide img{height: auto;
-    width: auto\9;
-    width:100%;
-}
+.lead_guide img{height: auto;  width: auto\9;  width:100%;}
 .lead_guide{ width: 100%; height: 100%;}
 .lead_guide img{position:absolute; top:50%;left:50%;transform:translate(-50%,-50%);}
 .lead_guide a{ text-decoration:none;font-size: 1em; top: 20px; right: 20px; position: absolute; z-index: 2; display:inline-block; border-radius:5px; color: #fff; background: #666; opacity: 0.4; line-height: 20px; text-align: center; padding: 5px; height: 20px;}
@@ -327,4 +324,26 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 .tableBox table td.inLink a{ color: #606060; padding-right: 20px; background-image: url("../images/common/ico_table.png"); background-repeat: no-repeat; background-position: right center; background-size: 16px 16px;}
 
 /* login */
-body.login_bg{ background-color: #92cb20;}
+body.login_bg .panel-body{ background-color: #92cb20;}
+.loginBox{ background-image: url("../images/common/bg_info.png"); background-repeat: no-repeat; background-position: top center; background-size: 100% auto; display: -webkit-flex;display: flex; flex-flow: column; -webkit-align-items: center; align-items: center;  -webkit-justify-content: center; justify-content: center; width: 100%; height: 100%;}
+.loginBox .centerLogin{ width: 80%; display: -webkit-flex; display: flex; -webkit-flex-flow: column;  flex-flow: column; -webkit-justify-content: center; justify-content: center;}
+.loginBox p.errText{ position: fixed; top: 0; z-index: 9999; left:15%; font-size:1em;text-align: center; width: 70%;  margin: 5px auto; background:rgba(222,255,157,0.2);  line-height: 40px; color: #deff00;}
+.loginBox h2{ width: 90px; color: #fff; margin: 0 auto; padding-bottom: 20px;}
+.loginBox h2 span{display: block; height: 90px; background: url("../images/common/logo_login.png") center center no-repeat; background-size: 100%; text-indent: -5000px;}
+.loginBox h2 strong{ font-weight: normal; text-align: center; display: block; line-height: 40px; font-size:18px;}
+.loginBox .loginBtn p{ margin-bottom: 10px;}
+.loginBox .loginBtn p.loginUser,
+.loginBox .loginBtn p.loginPass{ padding-left: 50px; padding-right: 5px;  border-bottom: 1px solid #e9f5d2;background-repeat: no-repeat; background-position: 14px center; background-size: 24px auto; }
+.loginBox .loginBtn p:last-child{ padding-top: 10px;}
+.loginBox .loginBtn p input{ background:rgba(0,0,0,0); color: #ffffff;  outline: none; border: none; width: 100%; font-size: 18px; line-height:40px; height: 40px;}
+.loginBox .loginBtn p.loginUser { background-image: url("../images/common/ico01_user.png"); }
+.loginBox .loginBtn p.loginPass{background-image: url("../images/common/ico01_pass.png"); }
+.loginBox .loginBtn p a.loginSub{background-color: #76a41b; line-height: 40px; text-decoration: none; display: block; width: 100%; text-align: center; color: #ffffff; font-size: 16px;}
+.loginBox .forPass { text-align: right;}
+.loginBox .forPass a{ color: #ffffff; line-height: 32px; font-size: 18px;}
+/* iphone 6 媒体判断 */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {
+    /* 登录图标判断 */
+    .loginBox h2{ width: 100px;}
+    .loginBox h2 span{ height: 100px;  font-size:24px;}
+}
