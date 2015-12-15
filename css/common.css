@@ -309,7 +309,11 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 /* 指标内容 */
 .tableGuide{ background-color: #fcfcfc;}
 .tableTitle { position:absolute;bottom: 0; width: 100%; left: 0; background-color: #ffffff;}
-.tableTitle h3{ font-size: 14px; font-weight: normal; border-bottom: 1px solid #333333; border-top: 1px solid #e5e5e5; height: 40px; line-height: 40px; color: #93cb20; padding-left: 15px; background-image: url("../images/common/title_line.png"); background-size:5px  20px;  background-repeat: no-repeat; background-position: 6px center;  }
+.tableTitle h3{ font-size: 14px; font-weight: normal; border-bottom: 1px solid #333333; border-top: 1px solid #e5e5e5; height: 40px; line-height: 40px; color: #93cb20; padding-left: 30px; background-image: url("../images/common/title_line.png"); background-size:24px 24px;  background-repeat: no-repeat; background-position: 4px center;  }
+.tableTitle h3.tableIco01{ background-image:url("../images/common/large_shapes_on.png");}
+.tableTitle h3.tableIco02{background-image:url("../images/common/large_chart_on.png");}
+.tableTitle h3.tableIco03{background-image:url("../images/common/large_clipart_on.png");}
+.tableTitle h3.tableIco04{background-image:url("../images/common/large_smartart_on.png");}
 .tableTitle a{ position:absolute;top: 10px; right: 10px; width: 16px; height: 16px; background-image: url("../images/common/ico03_menu.png");  background-position:  center center; background-repeat: no-repeat; background-size: 16px 16px;  text-indent: -5000px;}
 
 /* 指标表格 */
