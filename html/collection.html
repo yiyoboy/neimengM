@@ -63,6 +63,8 @@
                         <li class="collAdd onSelect"><a href="javascript:void(0)" onclick="$('#dlg1').dialog('open').dialog('center')">添加</a></li>
                     </ul>
                     <a class="btnItem" href="javascript:void(0);" onclick="$('#dlg1').dialog('open').dialog('center')">添加</a>
+                    <a class="btnItem" href="javascript:void(0);" onclick="$('#dlg2').dialog('open').dialog('center')">修改密码弹窗</a>
+                    <a class="btnItem" href="javascript:void(0);" onclick="$('#dlg3').dialog('open').dialog('center')">确定绑定弹窗</a>
                 </div>
 
             </div>
@@ -72,17 +74,55 @@
     </div>
     <!--easyui布局-->
 </div>
-<!--弹出层-->
+<!--收藏弹出层-->
 <div id="dlg1" class="easyui-dialog dialogGuide" style="width: 70%" data-options="inline:true,modal:true,closed:true,title:'Information'">
     <div class="icoDialog"></div>
     <div class="dialogCon">
+        <!--报表输入-->
         <p class="inputDialog"><input type="text" placeholder="请输入收藏报表的名称" name="" id=""/></p>
+        <!--//报表输入-->
+        <!--报表输入-->
+        <p></p>
+        <!--//报表输入-->
     </div>
     <div class="dialogBTnBox">
         <a href="javascript:void(0)" class="dialogBtn"  onclick="$('#dlg1').dialog('close')">确定</a>
     </div>
 </div>
-<!--弹出层-->
+<!--收藏弹出层-->
+<!--修改密码弹出层-->
+<div id="dlg2" class="easyui-dialog dialogGuide" style="width: 70%" data-options="inline:true,modal:true,closed:true,title:'Information'">
+    <div class="icoDialog"></div>
+    <div class="dialogCon">
+        <!--报表输入-->
+        <p class="textDialog">修改密码成功</p>
+        <!--//报表输入-->
+        <!--报表输入-->
+        <p></p>
+        <!--//报表输入-->
+    </div>
+    <div class="dialogBTnBox">
+        <a href="javascript:void(0)" class="dialogBtn"  onclick="$('#dlg2').dialog('close')">确定</a>
+    </div>
+</div>
+<!--修改密码弹出层-->
+<!--确定绑定弹出层-->
+<div id="dlg3" class="easyui-dialog dialogGuide" style="width: 70%" data-options="inline:true,modal:true,closed:true,title:'Information'">
+    <div class="icoDialog"></div>
+    <div class="dialogCon">
+        <!--报表输入-->
+        <p class="textDialog">确定解除绑定账号？</p>
+        <!--//报表输入-->
+        <!--报表输入-->
+        <p></p>
+        <!--//报表输入-->
+    </div>
+    <div class="dialogBTnBox twoDialogBTn">
+        <a href="javascript:void(0)" class="dialogBtn"  onclick="$('#dlg3').dialog('close')">确定</a>
+        <a href="javascript:void(0)" class="dialogBtn"  onclick="$('#dlg3').dialog('close')">取消</a>
+    </div>
+</div>
+<!--确定绑定弹出层-->
 <!--页面整体布局-->
 <script type="text/javascript">
 

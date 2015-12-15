@@ -373,13 +373,16 @@ body.login_bg .panel-body{ background-color: #92cb20;}
 .window .panel-body{ background: none;}
 .dialogGuide{ width: 70%; position: relative;}
 .icoDialog{ position:absolute; top: 0; right: 10px; z-index: 9999999; display:block; width: 22px; height: 26px; background: url("../images/common/ico_dilog.png") center center no-repeat; background-size: 100%;}
-.dialogCon{ padding: 250px 20px 20px;  background: url("../images/common/ico02_dilog.png") center 30px no-repeat;}
-.dialogCon .inputDialog{ width: 80%; border-bottom: 1px solid #e9f5d2; margin:0 auto; line-height: 40px;}
+.dialogCon{ padding: 240px 20px 10px;  background: url("../images/common/ico02_dilog.png") center 30px no-repeat;}
+.dialogCon p{ width: 80%; margin:0 auto; line-height: 40px; color: #ffffff;font-size: 18px; text-align: center;}
+.dialogCon .inputDialog{ border-bottom: 1px solid #e9f5d2;}
 .dialogCon .inputDialog input{ text-align: center;background:rgba(0,0,0,0); color: #ffffff;  outline: none; border: none; width: 100%; font-size: 18px; line-height:40px; height: 40px;}
 .dialogCon .inputDialog ::-webkit-input-placeholder{color: #ffffff;}
+.dialogCon .textDialog{}
 .dialogBTnBox{ }
-.dialogBtn { text-align: center; background-color: #2a2a34; display: block;  color: #92cb20; width: 100%; line-height: 40px;  height: 40px; font-size: 18px;}
-
+.twoDialogBTn .dialogBtn{ width: 49.8%;  display: inline-block; float:left;}
+.twoDialogBTn .dialogBtn:last-child{float: right;}
+.dialogBtn { text-decoration: none; text-align: center; background-color: #2a2a34; display: block;  color: #92cb20; width: 100%; line-height: 40px;  height: 40px; font-size: 18px;}
 
 
 /* 2015.12.15
