@@ -325,3 +325,6 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 .tableBox table th{ background-color: #fefefe; border-bottom: 1px solid #fbfbfb; padding: 10px 2px; font-weight: normal; line-height: 1.5em; }
 .tableBox table td{line-height: 1.5em; border-bottom:1px solid #fbfbfb;padding: 5px 2px; background-color: #fff;}
 .tableBox table td.inLink a{ color: #606060; padding-right: 20px; background-image: url("../images/common/ico_table.png"); background-repeat: no-repeat; background-position: right center; background-size: 16px 16px;}
+
+/* login */
+body.login_bg{ background-color: #92cb20;}
