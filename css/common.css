@@ -373,6 +373,8 @@ body.login_bg .panel-body{ background-color: #92cb20;}
 .window .panel-body{ background: none;}
 .dialogGuide{ width: 70%; position: relative;}
 .icoDialog{ position:absolute; top: 0; right: 10px; z-index: 9999999; display:block; width: 22px; height: 26px; background: url("../images/common/ico_dilog.png") center center no-repeat; background-size: 100%;}
+.ico01Dialog{background-image: url("../images/common/ico01_dilog.png");}
+.ico02Dialog{background-image: url("../images/common/ico12_dilog.png");}
 .dialogCon{ padding: 240px 20px 10px;  background: url("../images/common/ico02_dilog.png") center 30px no-repeat;}
 .dialogCon p{ width: 80%; margin:0 auto; line-height: 40px; color: #ffffff;font-size: 18px; text-align: center;}
 .dialogCon .inputDialog{ border-bottom: 1px solid #e9f5d2;}
@@ -385,14 +387,17 @@ body.login_bg .panel-body{ background-color: #92cb20;}
 .dialogBtn { text-decoration: none; text-align: center; background-color: #2a2a34; display: block;  color: #92cb20; width: 100%; line-height: 40px;  height: 40px; font-size: 18px;}
 
 
+
 /* 2015.12.15
-涉及页面如下：explainSearch.html
-查询ID如下： #explainSearchCon
+涉及页面如下：explainSearch.html,explain.html,findPassword.html, toggleGrid.html, noticeCon.html, noticeConInformation.html, set.html
+查询容器如下： .explainSearchCon, .explainCon, .findPasswordCon, .toggleGridCon, .noticeCon, .noticeConInformationCon, .setCon
 */
 
-/* 子页通用标题 */
-.titArea { height:50px; border-bottom:1px solid #fafafa;  background-color: #fdfdfd; position: relative;}
+/* 子页通用 标题 */
+.titArea { height:50px; border-bottom:1px solid #fafafa;  background-color: #fdfdfd;}
 .titArea h3 {font-size: 18px; line-height:50px; padding-left: 36px; background-size: 16px 16px; background-position: 16px 50%; background-repeat: no-repeat;}
+.titAreaOne { border-bottom:2px solid #92cb20;}
+
 /* 添加右侧切换图标 */
 .titArea ul{position: absolute; height: 35px; top: 7px; right: 7px;}
 .titArea ul li{ float: left; width: 35px; margin-left: 5px;}
@@ -403,34 +408,64 @@ body.login_bg .panel-body{ background-color: #92cb20;}
 .titArea ul li a.blockIco{ background-image: url("../images/common/ico02_coll.png");}
 .titArea ul li a.blockIco.active{ background-image: url("../images/common/ico02_coll_on.png");}
 
-#explainSearchCon .titArea h3 {background-image: url("../images/common/tit_explain_search@2x.png");}
-
-
+.explainSearchCon .titArea h3 {background-image: url("../images/common/tit_explain_search@2x.png");}
+.explainCon .titArea h3 {background-image: url("../images/common/tit_explain@2x.png");}
+.findPasswordCon .titArea h3 {background-image: url("../images/common/tit_find_password@2x.png");}
+.toggleGridCon .titArea h3 {background-image: url("../images/common/tit_toggle_grid@2x.png");}
+.noticeCon .titArea h3 {background-image: url("../images/common/tit_notice@2x.png");}
+.noticeInformationCon .titArea h3 {background-image: url("../images/common/tit_notice@2x.png");}
+.setCon .titArea h3 {background-image: url("../images/common/tit_set@2x.png");}
 /* 子页通用 列表 按钮 */
-.listGroup, .btnItem {display: block; margin: 0 16px;}
+.btnItem {display: block; margin: 0 16px;}
 
 /* 子页通用 列表 */
 .listGroup { }
-.listGroup dl {*zoom:1;margin-left:auto; margin-right:auto;  height:46px;}
+.listGroup dl {*zoom:1;margin:0 16px;  height:46px;}
 .listGroup dl:after{display:table; content:''; clear:both;}
 .listGroup dl dt { float:left; min-width: 76px; padding-right:6px; text-align: right; height:46px; line-height: 46px; font-size: 14px;}
 .listGroup dl dd {display:table-cell; *display:inline-block; width:2000px; *width:auto; height: 100%;  }
 .listGroup dl dd input, .listGroup dl dd select {height:40px; border:0; margin-top:2px; border-bottom: 1px solid #d7d7d7; font-size: 14px; background-image: url("../images/common/triangletit_form@2x.png");background-position: right bottom; background-repeat: no-repeat; background-size: 10px 10px;}
-.listGroup dl dd input { outline:none; width:96%; padding:0 2%; }
-.listGroup dl dd select {outline:none; width:100%;}
+.listGroup dl dd input { outline:none; width:96%; padding:0 2%; color: #666; }
+.listGroup dl dd select {outline:none; width:100%; color: #666;}
+.listGroup ul {}
+.listGroup ul li { line-height:1;  border-bottom: 1px solid #e5e5e5;}
+.listGroup ul li a {position: relative; display: block; overflow:hidden; padding:16px 0 16px 34px; border-left:4px solid transparent; font-size: 14px; color:#97979a; background-image: url("../images/common/ico03_coll.png");background-position: 12px 15px; background-repeat: no-repeat; background-size: 16px 16px;  }
+.listGroup ul li a:hover { text-decoration: none;}
+.listGroup ul li a.active { background-color:#f5f5f5; border-left:4px solid #92cb20; text-decoration: none; color:#92cb20; }
+.listGroup ul li a span.bedeck {position:absolute; right:15px; top: 50%;  margin-top:-8px ; display: block; width: 16px; height: 16px; background: url("../images/common/iconRight02_menu.png") 50% 50% no-repeat; background-size: 16px 16px;}
+.listGroup ul li h4 { position: relative; margin-right: 16px; color: #2a2a34; font-size: 15px; line-height: 1; text-align: right; font-weight: normal;}
+.listGroup ul li h4 strong { position: absolute; left:0; top: 0;}
+.listGroup ul li h4 em { font-size:10px; color:#d4d4d4; margin-left: 56px; padding-left:16px;background-position: 0 50%; background-repeat: no-repeat; background-size: 12px 12px;}
+.listGroup ul li h4 em.iconUserOperation {background-image: url("../images/common/icon_user_operation@2x.png");}
+.listGroup ul li h4 em.iconTimeOperation {background-image: url("../images/common/icon_time_operation@2x.png");}
+.listGroup ul li h4 em.iconStartPublish {background-image: url("../images/common/icon_start_publish@2x.png");}
+.listGroup ul li h4 em.iconStopPublish {background-image: url("../images/common/icon_stop_publish@2x.png");}
+.listGroup ul li  p { margin-top: 8px; padding: 8px 0 12px 0; margin-right: 16px; border-top:1px dashed #e5e5e5; line-height: 2; color: #69696e; position: relative;}
 
 /* 子页通用 按钮 */
-.btnItem { line-height: 1; margin-top:44px; padding: 14px 0; text-align: center;  background-color:#97979a; color:#fff; font-size: 18px; }
+.btnItem { line-height: 1; margin-top:44px; padding: 14px 0; text-align: center;  background-color:#97979a!important; color:#fff!important; font-size: 18px; boder:0!important; background-image: none!important; }
 .btnItem:hover {text-decoration: none;}
-.btnItem.activeOne {background-color: #92cb20; }
-.btnItem.activeTwo {background-color: #81b31d;}
+.btnItem.active {border:0!important;}
+.btnItem.activeOne {background-color: #92cb20!important; }
+.btnItem.activeTwo {background-color: #81b31d!important;}
 
-/* iphone 6 媒体判断 */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {
-    /* 登录图标判断 */
-    .loginBox h2{ width: 100px;}
-    .loginBox h2 span{ height: 100px;  font-size:24px;}
-    /* 收藏列表判断 */
-    .collBox ul li{ height: 170px;}
-    .collBox ul li.collAdd a{ height: 168px;}
-}
+/* 子页通用 提示文本 */
+.hintTxt { height:54px; line-height:54px; text-align: center; font-size: 16px; color: #92cb20;}
+
+/* 公告详情 */
+.noticeTxt { position: relative; border-bottom: 1px solid #e5e5e5; min-height: 90px; padding-bottom: 60px;}
+.noticeTxt p { line-height: 2; font-size: 15px; color: #69696e; margin:12px 16px 0 37px; }
+.noticeTxt span { position: absolute; left:0; bottom: 0; width: 100%;  display: block;  padding: 7px 0; background-color: #fcfcfc; border-top:1px solid #f9f9f9; text-align: right;}
+.noticeTxt span em { font-size:10px; color:#d4d4d4; margin-right: 16px; padding-left:16px;background-position: 0 50%; background-repeat: no-repeat; background-size: 12px 12px;}
+.noticeTxt span em.iconStartPublish {background-image: url("../images/common/icon_start_publish@2x.png");}
+.noticeTxt span em.iconStopPublish {background-image: url("../images/common/icon_stop_publish@2x.png");}
+
+/*  设置 - 修改密码 */
+.setCon .listGroup ul li a.active { background-color:#fff; border-left:4px solid #fff; text-decoration: none; color:#92cb20; }
+.setCon .m-right { right:16px;}
+.setCon .m-right .switchbutton-on {background-color:#92cb20; color: #fff;}
+.setCon .switchbutton-off {background-color:#fcfcfc; color: #9b9b9b;}
+
+.setCon .editPasswordArea { padding-bottom: 36px;}
+.setCon .editPasswordArea dl:first-child {border-top:6px solid #92cb20;}
+.setCon .editPasswordArea dl dt{ color:#97979a;}

@@ -47,82 +47,42 @@
 	<div class="easyui-navpanel"  >
         <!--页面内容框架-->
         <div id="center">
-            <div class="collection">
+            <div class="setCon">
                 <div class="titArea">
-                    <h3>收藏</h3>
-                    <ul class="collItem">
-                        <li><a href="javascript:void(0)" class="blockIco active">列表</a></li>
-                        <li><a href="javascript:void(0)" class="listIco">平铺</a></li>
-                    </ul>
+                    <h3>设置</h3>
                 </div>
-                <div class="collBox lineColl">
+                <div class="listGroup">
                     <ul>
-                        <li class="onSelect"><strong>日发展</strong> <a href="javascript:void(0)">删除</a></li>
-                        <li><strong>月发展</strong> <a href="javascript:void(0)">删除</a></li>
-                        <li><strong>出帐收入</strong> <a href="javascript:void(0)">删除</a></li>
-                        <li class="collAdd onSelect"><a href="javascript:void(0)" onclick="$('#dlg1').dialog('open').dialog('center')">添加</a></li>
+                        <!--<input class="easyui-switchbutton" data-options="onText:'是', offText:'否' checked"></div>-->
+                        <li><a href="javascript:void(0);">切换网格<div class="m-right"><input class="easyui-switchbutton" data-options="onText:'是', offText:'否'"></div></a> </li>
+                        <li><a href="javascript:void(0);">解除绑定<div class="m-right"><input class="easyui-switchbutton" data-options="onText:'是', offText:'否'"></div></a> </li>
+                        <li>
+                            <a href="javascript:void(0);">修改密码<div class="m-right"><input class="easyui-switchbutton" data-options="onText:'是', offText:'否'"></div></a>
+                            <!--<div class="editPasswordArea" style="display: none;">-->
+                            <div class="editPasswordArea">
+                                <dl>
+                                    <dt>当前密码</dt>
+                                    <dd><input type="text" value="" id="" name="" /></dd>
+                                </dl>
+                                <dl>
+                                    <dt>新密码</dt>
+                                    <dd><input type="text" value="" id="" name="" /></dd>
+                                </dl>
+                                <dl>
+                                    <dt>确定新密码</dt>
+                                    <dd><input type="text" value="" id="" name="" /></dd>
+                                </dl>
+                                <a class="btnItem" href="javascript:void(0);">修改密码</a>
+                            </div>
+                        </li>
                     </ul>
-                    <a class="btnItem activeOne" href="javascript:void(0);" onclick="$('#dlg1').dialog('open').dialog('center')">添加</a>
-                    <a class="btnItem activeOne" href="javascript:void(0);" onclick="$('#dlg2').dialog('open').dialog('center')">修改密码弹窗</a>
-                    <a class="btnItem activeOne" href="javascript:void(0);" onclick="$('#dlg3').dialog('open').dialog('center')">确定绑定弹窗</a>
                 </div>
-
             </div>
         </div>
         <!--//页面内容框架-->
-
     </div>
     <!--easyui布局-->
 </div>
-<!--收藏弹出层-->
-<div id="dlg1" class="easyui-dialog dialogGuide" style="width: 70%" data-options="inline:true,modal:true,closed:true,title:'Information'">
-    <div class="icoDialog"></div>
-    <div class="dialogCon">
-        <!--报表输入-->
-        <p class="inputDialog"><input type="text" placeholder="请输入收藏报表的名称" name="" id=""/></p>
-        <!--//报表输入-->
-        <!--报表输入-->
-        <p></p>
-        <!--//报表输入-->
-    </div>
-    <div class="dialogBTnBox">
-        <a href="javascript:void(0)" class="dialogBtn"  onclick="$('#dlg1').dialog('close')">确定</a>
-    </div>
-</div>
-<!--收藏弹出层-->
-<!--修改密码弹出层-->
-<div id="dlg2" class="easyui-dialog dialogGuide" style="width: 70%" data-options="inline:true,modal:true,closed:true,title:'Information'">
-    <div class="icoDialog ico01Dialog"></div>
-    <div class="dialogCon">
-        <!--报表输入-->
-        <p class="textDialog">修改密码成功</p>
-        <!--//报表输入-->
-        <!--报表输入-->
-        <p></p>
-        <!--//报表输入-->
-    </div>
-    <div class="dialogBTnBox">
-        <a href="javascript:void(0)" class="dialogBtn"  onclick="$('#dlg2').dialog('close')">确定</a>
-    </div>
-</div>
-<!--修改密码弹出层-->
-<!--确定绑定弹出层-->
-<div id="dlg3" class="easyui-dialog dialogGuide" style="width: 70%" data-options="inline:true,modal:true,closed:true,title:'Information'">
-    <div class="icoDialog ico02Dialog"></div>
-    <div class="dialogCon">
-        <!--报表输入-->
-        <p class="textDialog">确定解除绑定账号？</p>
-        <!--//报表输入-->
-        <!--报表输入-->
-        <p></p>
-        <!--//报表输入-->
-    </div>
-    <div class="dialogBTnBox twoDialogBTn">
-        <a href="javascript:void(0)" class="dialogBtn"  onclick="$('#dlg3').dialog('close')">确定</a>
-        <a href="javascript:void(0)" class="dialogBtn"  onclick="$('#dlg3').dialog('close')">取消</a>
-    </div>
-</div>
-<!--确定绑定弹出层-->
 <!--页面整体布局-->
 <script type="text/javascript">
 

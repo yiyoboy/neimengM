@@ -6,7 +6,29 @@ $(function(){
    toggleBox(".toggleBtn","open")
     toggleTable(".toggleBTable","active");
     collToggle(".collItem","active",".collBox","onSelect");
+    toggleBtn(".btnItem","activeTwo");
+    toggleLinks(".listGroup ul li a","active");
 })
+/* 简易表单验证 */
+$(function(){
+    $(".listGroup input, .listGroup select").click(function(){
+        $("a.btnItem").addClass("activeOne")
+    });
+})
+/* list 切换列表 */
+function toggleLinks(className,activeName){
+    var target = $(className);
+    touch.on(target, 'hold tap doubletap', function(ev){
+        $(this).toggleClass(activeName).parents("li").siblings("li").find("a").removeClass(activeName);
+    });
+}
+/* btn 切换效果 */
+function toggleBtn(className,activeName){
+    var target = $(className);
+    touch.on(target, 'hold tap doubletap', function(ev){
+        $(this).toggleClass(activeName);
+    });
+}
 
 /* 收藏切换 */
 function collToggle(className,activeName,collListName,onSelect){
