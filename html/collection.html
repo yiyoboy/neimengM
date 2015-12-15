@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>承包助手</title>
-	<link rel="stylesheet" type="text/css" href="../css/themes/metro-green/easyui.css">
+	<link rel="stylesheet" type="text/css" href="../css/themes/metro/easyui.css">
     <link rel="stylesheet" type="text/css" href="../css/themes/mobile.css">
 	<link rel="stylesheet" type="text/css" href="../css/themes/icon.css">
     <link rel="stylesheet" type="text/css" href="../css/common.css">
@@ -60,17 +60,29 @@
                         <li class="onSelect"><strong>日发展</strong> <a href="javascript:void(0)">删除</a></li>
                         <li><strong>月发展</strong> <a href="javascript:void(0)">删除</a></li>
                         <li><strong>出帐收入</strong> <a href="javascript:void(0)">删除</a></li>
-                        <li class="collAdd onSelect"><a href="javascript:void(0)">添加</a></li>
+                        <li class="collAdd onSelect"><a href="javascript:void(0)" onclick="$('#dlg1').dialog('open').dialog('center')">添加</a></li>
                     </ul>
-                    <a class="btnItem" href="javascript:void(0);">添加</a>
+                    <a class="btnItem" href="javascript:void(0);" onclick="$('#dlg1').dialog('open').dialog('center')">添加</a>
                 </div>
 
             </div>
         </div>
         <!--//页面内容框架-->
+
     </div>
     <!--easyui布局-->
 </div>
+<!--弹出层-->
+<div id="dlg1" class="easyui-dialog dialogGuide" style="width: 70%" data-options="inline:true,modal:true,closed:true,title:'Information'">
+    <div class="icoDialog"></div>
+    <div class="dialogCon">
+        <p class="inputDialog"><input type="text" placeholder="请输入收藏报表的名称" name="" id=""/></p>
+    </div>
+    <div class="dialogBTnBox">
+        <a href="javascript:void(0)" class="dialogBtn"  onclick="$('#dlg1').dialog('close')">确定</a>
+    </div>
+</div>
+<!--弹出层-->
 <!--页面整体布局-->
 <script type="text/javascript">
 
