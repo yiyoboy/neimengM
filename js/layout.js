@@ -5,8 +5,28 @@ $(function(){
    tabMenu(".topNav","active");
    toggleBox(".toggleBtn","open")
     toggleTable(".toggleBTable","active");
-
+    collToggle(".collItem","active",".collBox","onSelect");
 })
+
+/* 收藏切换 */
+function collToggle(className,activeName,collListName,onSelect){
+    var target = $(className).find("li a");
+    var target02 = $(collListName).find("li");
+    touch.on(target, 'hold tap doubletap', function(ev){
+        $(this).addClass(activeName).parents("li").siblings("li").find("a").removeClass(activeName);
+        var liIndex =$(this).parents("li").index();
+        if(liIndex ==0){
+            $(".collBox").removeClass("lineColl").addClass("lineColl");
+        }
+        else{
+            $(".collBox").removeClass("lineColl");
+        }
+    });
+    touch.on(target02, 'hold tap doubletap', function(ev){
+        $(this).addClass(onSelect).siblings("li").removeClass(onSelect);
+    });
+}
+
 /* menu 切换效果 */
 function tabMenu(className,activeName){
     var target = $(className).find("li a");

@@ -32,7 +32,7 @@ body, input, button, select, textarea{}
 em, cite, address, optgroup{ font-style:normal;}
 kbd, samp, code{ font-family:monospace;}
 
-img, input, button, select, textarea{ vertical-align:middle;}
+img, input, button, select, textarea{ vertical-align:middle; font-family:tahoma, arial, 'Hiragino Sans GB', \5b8b\4f53, sans-serif !important;}
 ul, ol{ list-style:none;}
 img, fieldset{ border:0;}
 abbr, acronym{ border-bottom:1px dotted black; cursor:help;}
@@ -341,9 +341,77 @@ body.login_bg .panel-body{ background-color: #92cb20;}
 .loginBox .loginBtn p a.loginSub{background-color: #76a41b; line-height: 40px; text-decoration: none; display: block; width: 100%; text-align: center; color: #ffffff; font-size: 16px;}
 .loginBox .forPass { text-align: right;}
 .loginBox .forPass a{ color: #ffffff; line-height: 32px; font-size: 18px;}
+
+/* 收藏 页面*/
+.collection{}
+.collection .titArea h3 {background-image: url("../images/common/ico03_menu.png");}
+.collBox{ padding: 10px;}
+.collBox ul{ overflow: hidden;}
+.collBox ul li.onSelect{background-color: #92cb20; }
+.collBox ul li.onSelect a{ background-color: #2a2a34; color: #ffffff;}
+.collBox ul li.onSelect strong{ color: #ffffff; background-image: url("../images/common/ico03_coll_on.png");}
+.collBox ul li{  color: #333333; font-size: 14px; float: left; width: 45%; margin:2.4%; height: 150px; position: relative;  background-color: #eeeeee;  background-image:url("../images/common/bg_coll.png"); background-repeat: no-repeat; background-position: center bottom; background-size:100%;}
+.collBox ul li a{ position: absolute; right: 0;  color: #333333; text-decoration: none; bottom: 0; height: 40px; line-height: 40px; width: 100%; text-align: center; background-color: #f3f3f3;}
+.collBox ul li strong{ line-height: 30px; position: absolute; left: 10px; top: 0; font-weight: normal; background: url("../images/common/ico03_coll.png") left center no-repeat; background-size: 16px 16px; padding-left: 20px; display: block; }
+.collBox ul li.collAdd{ background-image: none;}
+.collBox ul li.collAdd a{ display: block; height: 148px; border: 1px solid #eeeeee; text-indent: -5000px; position: relative; background:#ffffff url("../images/common/ico04_coll.png") center center no-repeat; background-size: 50%;  }
+.collBox .btnItem{ display: none;}
+
+.lineColl.collBox{ padding: 0}
+.lineColl.collBox li{ height: 40px; border-bottom: 1px solid #e5e5e5; width: 100%; margin: 0; background-color: #ffffff; background-image: none;}
+.lineColl.collBox li a{ left: auto; right: 10px; ; display: inline; width: auto; height: auto; background: none; color: #92cb20;}
+.lineColl.collBox li strong{ top: 5px;}
+.lineColl.collBox ul li.onSelect a{ background: none;}
+.lineColl.collBox li.collAdd{ display: none;}
+.lineColl.collBox .btnItem{ display: block; background-color: #92cb20;}
+
+
+/* 2015.12.15
+涉及页面如下：explainSearch.html
+查询ID如下： #explainSearchCon
+*/
+
+/* 子页通用标题 */
+.titArea { height:50px; border-bottom:1px solid #fafafa;  background-color: #fdfdfd; position: relative;}
+.titArea h3 {font-size: 18px; line-height:50px; padding-left: 36px; background-size: 16px 16px; background-position: 16px 50%; background-repeat: no-repeat;}
+/* 添加右侧切换图标 */
+.titArea ul{position: absolute; height: 35px; top: 7px; right: 7px;}
+.titArea ul li{ float: left; width: 35px; margin-left: 5px;}
+.titArea ul li a{ display: block; height: 35px;  overflow: hidden; text-indent: -5000px; border-radius:5px; background-repeat: no-repeat; background-position: center; background-color: #ffffff; background-size: 16px 16px;   }
+.titArea ul li a.active{ background-color: #92cb20;}
+.titArea ul li a.listIco{ background-image: url("../images/common/ico01_coll.png");}
+.titArea ul li a.listIco.active{background-image: url("../images/common/ico01_coll_on.png");}
+.titArea ul li a.blockIco{ background-image: url("../images/common/ico02_coll.png");}
+.titArea ul li a.blockIco.active{ background-image: url("../images/common/ico02_coll_on.png");}
+
+#explainSearchCon .titArea h3 {background-image: url("../images/common/tit_explain_search@2x.png");}
+
+
+/* 子页通用 列表 按钮 */
+.listGroup, .btnItem {display: block; margin: 0 16px;}
+
+/* 子页通用 列表 */
+.listGroup { }
+.listGroup dl {*zoom:1;margin-left:auto; margin-right:auto;  height:46px;}
+.listGroup dl:after{display:table; content:''; clear:both;}
+.listGroup dl dt { float:left; min-width: 76px; padding-right:6px; text-align: right; height:46px; line-height: 46px; font-size: 14px;}
+.listGroup dl dd {display:table-cell; *display:inline-block; width:2000px; *width:auto; height: 100%;  }
+.listGroup dl dd input, .listGroup dl dd select {height:40px; border:0; margin-top:2px; border-bottom: 1px solid #d7d7d7; font-size: 14px; background-image: url("../images/common/triangletit_form@2x.png");background-position: right bottom; background-repeat: no-repeat; background-size: 10px 10px;}
+.listGroup dl dd input { outline:none; width:96%; padding:0 2%; }
+.listGroup dl dd select {outline:none; width:100%;}
+
+/* 子页通用 按钮 */
+.btnItem { line-height: 1; margin-top:44px; padding: 14px 0; text-align: center;  background-color:#97979a; color:#fff; font-size: 18px; }
+.btnItem:hover {text-decoration: none;}
+.btnItem.activeOne {background-color: #92cb20; }
+.btnItem.activeTwo {background-color: #81b31d;}
+
 /* iphone 6 媒体判断 */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {
     /* 登录图标判断 */
     .loginBox h2{ width: 100px;}
     .loginBox h2 span{ height: 100px;  font-size:24px;}
+    /* 收藏列表判断 */
+    .collBox ul li{ height: 170px;}
+    .collBox ul li.collAdd a{ height: 168px;}
 }
