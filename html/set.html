@@ -55,9 +55,14 @@
                     <ul>
                         <!--<input class="easyui-switchbutton" data-options="onText:'是', offText:'否' checked"></div>-->
                         <li><a href="javascript:void(0);">切换网格<div class="m-right"><input class="easyui-switchbutton" data-options="onText:'是', offText:'否'"></div></a> </li>
-                        <li><a href="javascript:void(0);">解除绑定<div class="m-right"><input class="easyui-switchbutton" data-options="onText:'是', offText:'否'"></div></a> </li>
+                        <li><a href="javascript:void(0);">解除绑定<div class="m-right"><input class="easyui-switchbutton" data-options="onText:'是', offText:'否',onChange: function(checked){
+        $('#dlg2').dialog('open').dialog('center')
+      }
+"></div></a> </li>
                         <li>
-                            <a href="javascript:void(0);">修改密码<div class="m-right"><input class="easyui-switchbutton" data-options="onText:'是', offText:'否'"></div></a>
+                            <a href="javascript:void(0);">修改密码<div class="m-right"><input class="easyui-switchbutton" data-options="onText:'是', offText:'否',onChange: function(checked){
+        $('#dlg3').dialog('open').dialog('center')
+      }"></div></a>
                             <!--<div class="editPasswordArea" style="display: none;">-->
                             <div class="editPasswordArea">
                                 <dl>
@@ -84,6 +89,39 @@
     <!--easyui布局-->
 </div>
 <!--页面整体布局-->
+<!--修改密码弹出层-->
+<div id="dlg2" class="easyui-dialog dialogGuide" style="width: 70%" data-options="inline:true,modal:true,closed:true,title:'Information'">
+    <div class="icoDialog ico01Dialog"></div>
+    <div class="dialogCon">
+        <!--报表输入-->
+        <p class="textDialog">修改密码成功</p>
+        <!--//报表输入-->
+        <!--报表输入-->
+        <p></p>
+        <!--//报表输入-->
+    </div>
+    <div class="dialogBTnBox">
+        <a href="javascript:void(0)" class="dialogBtn"  onclick="$('#dlg2').dialog('close')">确定</a>
+    </div>
+</div>
+<!--修改密码弹出层-->
+<!--确定绑定弹出层-->
+<div id="dlg3" class="easyui-dialog dialogGuide" style="width: 70%" data-options="inline:true,modal:true,closed:true,title:'Information'">
+    <div class="icoDialog ico02Dialog"></div>
+    <div class="dialogCon">
+        <!--报表输入-->
+        <p class="textDialog">确定解除绑定账号？</p>
+        <!--//报表输入-->
+        <!--报表输入-->
+        <p></p>
+        <!--//报表输入-->
+    </div>
+    <div class="dialogBTnBox twoDialogBTn">
+        <a href="javascript:void(0)" class="dialogBtn"  onclick="$('#dlg3').dialog('close')">确定</a>
+        <a href="javascript:void(0)" class="dialogBtn"  onclick="$('#dlg3').dialog('close')">取消</a>
+    </div>
+</div>
+<!--确定绑定弹出层-->
 <script type="text/javascript">
 
     var slideout = new Slideout({

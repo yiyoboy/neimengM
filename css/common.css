@@ -461,7 +461,8 @@ body.login_bg .panel-body{ background-color: #92cb20;}
 .noticeTxt span em.iconStopPublish {background-image: url("../images/common/icon_stop_publish@2x.png");}
 
 /*  设置 - 修改密码 */
-.setCon .listGroup ul li a.active { background-color:#fff; border-left:4px solid #fff; text-decoration: none; color:#92cb20; }
+.setCon .listGroup ul li a.active { background-color:#fff; border-left:4px solid #fff; text-decoration: none; color:#92cb20;
+    padding-left:0 ; padding-right: 0; }
 .setCon .m-right { right:16px;}
 .setCon .m-right .switchbutton-on {background-color:#92cb20; color: #fff;}
 .setCon .switchbutton-off {background-color:#fcfcfc; color: #9b9b9b;}
