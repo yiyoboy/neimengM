@@ -143,7 +143,7 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 .menu-section{}
 .menu-section-list{  border-top: 1px solid #e1e1e1;}
 .menu-section-list li{position: relative;}
-.menu-section-list a{display: block; line-height: 32px; height:32px; padding-left: 36px; border-bottom: 1px solid #e1e1e1; color: #4f4f4f;  border-left:5px solid #eaeaea;  background-repeat: no-repeat; background-size: 16px 16px; background-position: 10px center;}
+.menu-section-list a{display: block; line-height: 40px; height:40px; padding-left: 36px; border-bottom: 1px solid #e1e1e1; color: #4f4f4f;  border-left:5px solid #eaeaea;  background-repeat: no-repeat; background-size: 16px 16px; background-position: 10px center;}
 .menu-section-list a:hover{background-color: rgba(255, 255, 255, 0.1);text-decoration: none;}
 .menu-section-list a.active{ background-color: #2a2a34; color: #e7e7e7;/* 皮肤 */ border-left:5px solid #92cb20; }
 .menu-section-list a span{ position:absolute; right:15px; top: 50%;
@@ -186,29 +186,31 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 
 /* tab 组 */
 .panel-header{ padding: 0; border: none;}
-.topTab{ background: #fdfdfd; border: none; border-bottom: 1px solid #fafafa; text-align: center; padding-top: 5px; }
-.topTab li{ display:inline-block;}
-.topTab li a{ color: #000000; font-size:14px; display: block; padding: 0 10px;   height: 38px; line-height: 38px;border-bottom: 2px solid #fdfdfd;  background: #fdfdfd; text-decoration: none;}
-.topTab li a.active{ /* 皮肤 */ border-bottom: 2px solid #000000; font-size: 18px;}
+.topTab{ background: #fdfdfd; border: none; border-bottom: 2px solid #e2e5e6; text-align: center; padding-top: 5px; }
+.topTab li{ display:inline-block; position: relative; bottom: -2px;}
+.topTab li a{ color: #000000; font-size:14px; display: block; padding: 0 10px;   height: 37px; line-height: 38px;border-bottom: 2px solid #e2e5e6;  background: #fdfdfd; text-decoration: none;}
+.topTab li a.active{ /* 皮肤 */ border-bottom: 2px solid #000000; font-size: 18px; height: 39px}
 
 
 /* 底部图标 */
 
 .panel-footer{ border-top: 1px solid #cccccc; background:#fdfdfd;}
-.m-buttongroup .l-btn-icon{ background-size:32px auto;}
-.m-buttongroup .l-btn-text{ color: #8d8d8d;}
+.footerGuide ul li{ height:60px; background-color: #FDFDFD;-webkit-box-flex:1; /* OLD - iOS 6-, Safari 3.1-6 */ -moz-box-flex:1; /* OLD - Firefox 19- */-webkit-flex:1; /* Chrome */ -ms-flex:1; /* IE 10 */flex:1;}
+.footerGuide ul li a{color: #8d8d8d; text-decoration: none;text-align: center; font-size:10px; background-size:32px auto; background-repeat: no-repeat; background-position: center 4px; display: block; padding-top: 40px;}
+.footerGuide ul li a.active,
+.footerGuide ul li a:active{ background-color: #fdfdfd!important;}
 
-.icon-large-picture{background-image: url('../images/common/large_picture.png'); }
-.icon-large-clipart{background-image: url('../images/common/large_clipart.png'); }
-.icon-large-shapes{background-image: url('../images/common/large_shapes.png'); }
-.icon-large-smartart{background-image: url('../images/common/large_smartart.png'); }
-.icon-large-chart{background-image: url('../images/common/large_chart.png'); }
-.l-btn-focus{ background-color: #ffffff!important;}
-.l-btn-focus .icon-large-picture{background-image: url('../images/common/large_picture_on.png'); }
-.l-btn-focus .icon-large-clipart{background-image: url('../images/common/large_clipart_on.png'); }
-.l-btn-focus .icon-large-shapes{background-image: url('../images/common/large_shapes_on.png'); }
-.l-btn-focus .icon-large-smartart{background-image: url('../images/common/large_smartart_on.png'); }
-.l-btn-focus .icon-large-chart{background-image: url('../images/common/large_chart_on.png'); }
+.icon_picture{background-image: url('../images/common/large_picture.png'); }
+.icon_clipart{background-image: url('../images/common/large_clipart.png'); }
+.icon_shapes{background-image: url('../images/common/large_shapes.png'); }
+.icon_smartart{background-image: url('../images/common/large_smartart.png'); }
+.icon_chart{background-image: url('../images/common/large_chart.png'); }
+
+.icon_picture.active{background-image: url('../images/common/large_picture_on.png'); }
+.icon_clipart.active{background-image: url('../images/common/large_clipart_on.png'); }
+.icon_shapes.active{background-image: url('../images/common/large_shapes_on.png'); }
+.icon_smartart.active{background-image: url('../images/common/large_smartart_on.png'); }
+.icon_chart.active{background-image: url('../images/common/large_chart_on.png'); }
 
 /* swiper 图标菜单*/
 .topNavGuide{border: 1px solid #e3e3e3;}
@@ -254,7 +256,7 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 /** * The holder is the only “scrollable” top-level container element. */
 .picker__holder{width: 100%; -webkit-overflow-scrolling: touch;}
 /** * The box contains all the picker contents. */
-.picker__box{background: #ffffff; display: table-cell; vertical-align: middle;}
+.picker__box{background: #ffffff;  vertical-align: middle;}
 /** * When the picker opens... */
 .picker--opened .picker__holder{top: 0; background: transparent; -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#1E000000,endColorstr=#1E000000)"; zoom: 1; background: rgba(0, 0, 0, 0.32); -webkit-transition: background 0.15s ease-out; -moz-transition: background 0.15s ease-out; transition: background 0.15s ease-out;}
 .picker--opened .picker__frame{top: 0; filter: alpha(opacity=100); -moz-opacity: 1; opacity: 1;}
@@ -262,7 +264,7 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 /** * For `large` screens, transform into an inline picker. */
 /* ========================================================================== $BASE-DATE-PICKER ========================================================================== */
 /** * The picker box. */
-.picker__box{}
+.picker__box{ }
 /** * The header containing the month and year stuff. */
 .picker__header{position: relative; font-size:1em; height: 50px; color: #b1d95f; line-height: 50px; text-align: center;}
 /** * The month and year labels. */
@@ -310,7 +312,7 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 .picker__footer{text-align: center; display: none;}
 
 /* 指标内容 */
-.tableGuide{ background-color: #fcfcfc;}
+.tableGuide{ background-color: #e7e7e7;}
 .tableTitle { position:absolute;bottom: 0; width: 100%; left: 0; background-color: #ffffff;}
 .tableTitle h3{ font-size: 14px; font-weight: normal; border-bottom: 1px solid #333333; border-top: 1px solid #e5e5e5; height: 40px; line-height: 40px; color: #93cb20; padding-left: 30px; background-image: url("../images/common/title_line.png"); background-size:24px 24px;  background-repeat: no-repeat; background-position: 4px center;  }
 .tableTitle h3.tableIco01{ background-image:url("../images/common/large_shapes_on.png");}
@@ -323,10 +325,10 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 .tableBox{ position: relative; margin-bottom: 5px;}
 .tableBox a.toggleBTable{ position: absolute; top: 4px; right:5px; width: 30px; height: 30px; text-indent: -5000px; background: url("../images/common/toggle_ico02.png") center center no-repeat; background-size: 30px 30px;}
 .tableBox a.toggleBTable.active{background-image: url("../images/common/toggle_ico01.png");}
-.tableBox table{ text-align: center; border-bottom: 1px solid #f8f6f7; color: #606060;}
+.tableBox table{ text-align: center; border-bottom: 1px solid #d9d9d9; color: #606060;}
 .tableBox table thead th.imText{color: #92cc20;}
-.tableBox table th{ background-color: #fefefe; border-bottom: 1px solid #fbfbfb; padding: 10px 2px; font-weight: normal; line-height: 1.5em; }
-.tableBox table td{line-height: 1.5em; border-bottom:1px solid #fbfbfb;padding: 5px 2px; background-color: #fff;}
+.tableBox table th{ background-color: #fefefe; border-bottom: 1px solid #d9d9d9; padding: 10px 2px; font-weight: normal; line-height: 1.5em; }
+.tableBox table td{line-height: 1.5em; border-bottom:1px solid #d9d9d9;padding: 5px 2px; background-color: #fff;}
 .tableBox table td.inLink a{ color: #606060; padding-right: 20px; background-image: url("../images/common/ico_table.png"); background-repeat: no-repeat; background-position: right center; background-size: 16px 16px;}
 
 /* login */
