@@ -175,7 +175,7 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 .lead_guide img{height: auto;  width: auto\9;  width:100%;}
 .lead_guide{ width: 100%; height: 100%;}
 .lead_guide img{position:absolute; top:50%;left:50%;transform:translate(-50%,-50%);}
-.lead_guide a{ text-decoration:none;font-size: 1em; top: 20px; right: 20px; position: absolute; z-index: 2; display:inline-block; border-radius:5px; color: #fff;  background:rgba(102,102,102,0); line-height: 20px; text-align: center; padding: 5px; height: 20px;}
+.lead_guide a{ text-decoration:none;font-size: 1em; top: 20px; right: 20px; position: absolute; z-index: 2; display:inline-block; border-radius:5px; color: #fff;  background:rgba(102,102,102,0.3); line-height: 20px; text-align: center; padding: 5px; height: 20px;}
 .lead_guide a span{ color: #e68900; padding: 0 5px;}
 
 #center{ }
@@ -238,6 +238,9 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 /* 日历样式 */
 
 .dateHeader{ height:368px;border-bottom: 1px solid #e5e5e5;overflow: hidden;}
+/* 没有日历高度 */
+.dateHeader.noDate .dateGuide{display:none;}
+.dateHeader.noDate{ height:87px;}
 .dateGuide{ position: relative; }
 .dateGuide a.toggleBtn{ position: absolute; top: 8px; right: 5px; width: 30px; height: 30px; text-indent: -5000px; background: url("../images/common/toggle_ico02.png") center center no-repeat; background-size: 30px 30px;}
 .dateGuide a.toggleBtn.open{background-image: url("../images/common/toggle_ico01.png");}
