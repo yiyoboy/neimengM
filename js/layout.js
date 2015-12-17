@@ -4,7 +4,7 @@ $(function(){
    tabMenu(".menu-section-list","active");
    tabMenu(".topNav","active");
    tabMenu(".footerBtn","active");
-   toggleBox(".toggleBtn","open")
+   toggleBox(".toggleBtn","open");
     toggleTable(".toggleBTable","active");
     collToggle(".collItem","active",".collBox","onSelect");
     toggleBtn(".btnItem","activeTwo");

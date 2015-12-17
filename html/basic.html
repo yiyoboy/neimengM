@@ -56,9 +56,10 @@
 			</ul>
             <!--日历控件-->
             <div class="dateGuide">
+                <div class="yearText">年</div>
                 <fieldset class="fieldset">
 
-                    <div><input id="" hidden="hidden" class="datepicker" type="text"> <a class="toggleBtn" href="javascript:void(0)">切换</a></div>
+                    <div><input id="" hidden="hidden" class="datepicker" type="text">   <a class="toggleBtn open" href="javascript:void(0)">切换</a> </div>
 
                 </fieldset>
 
@@ -78,7 +79,7 @@
         <footer>
             <div class="footerGuide">
                 <ul class="colGroup footerBtn">
-                    <li><a href="javascript:void(0)" class="icon_picture active">首页</a></li>
+                    <li><a href="javascript:void(0)" class="icon_picture ">首页</a></li>
                     <li><a href="javascript:void(0)" class="icon_clipart">用户概况</a></li>
                     <li><a href="javascript:void(0)" class="icon_shapes">销售品</a></li>
                     <li><a href="javascript:void(0)" class="icon_smartart">4G</a></li>
@@ -115,7 +116,7 @@
                                 <td>236.32万</td>
                             </tr>
                             <tr>
-                                <td class="inLink"><a href="javascript:void(0)">网上用户</a> </td>
+                                <td class="inLink greenLink"><a href="javascript:void(0)">网上用户</a> </td>
                                 <td>236.32万</td>
                                 <td>236.32万</td>
                             </tr>
@@ -260,6 +261,7 @@
 
         $('.datepicker').pickadate(
                 {
+
                     monthsFull: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
                     weekdaysShort: ['日', '一', '二', '三', '四', '五', '六'],
                     year: 'picker__year',
@@ -269,6 +271,7 @@
                 }
         );
     }
+
     var slideout = new Slideout({
         'panel': document.getElementById('main'),
         'menu': document.getElementById('menu'),
