@@ -196,10 +196,12 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 
 .panel-footer{ border-top: 1px solid #cccccc; background:#fdfdfd;}
 .footerGuide ul li{ height:60px; background-color: #FDFDFD;-webkit-box-flex:1; /* OLD - iOS 6-, Safari 3.1-6 */ -moz-box-flex:1; /* OLD - Firefox 19- */-webkit-flex:1; /* Chrome */ -ms-flex:1; /* IE 10 */flex:1;}
-.footerGuide ul li a{color: #8d8d8d; text-decoration: none;text-align: center; font-size:10px; background-size:32px auto; background-repeat: no-repeat; background-position: center 4px; display: block; padding-top: 40px;}
-.footerGuide ul li a.active,
-.footerGuide ul li a:active{ background-color: #fdfdfd!important;}
+.footerGuide ul li a{ color: #8d8d8d; position: relative; text-decoration: none;text-align: center; font-size:10px; height: 20px;  display: block; padding-top: 40px;}
+.footerGuide ul li a span{ position: absolute; top: 5px; left: 50%; margin-left: -16px; width: 32px; height: 32px; display:block;}
+.footerGuide ul li a span img{ width: 32px; height: 32px;}
+.footerGuide ul li.active{ background-color: #eeeeee!important;}
 
+/*
 .icon_picture{background-image: url('../images/common/large_picture.png'); }
 .icon_clipart{background-image: url('../images/common/large_clipart.png'); }
 .icon_shapes{background-image: url('../images/common/large_shapes.png'); }
@@ -210,7 +212,7 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 .icon_clipart.active{background-image: url('../images/common/large_clipart_on.png'); }
 .icon_shapes.active{background-image: url('../images/common/large_shapes_on.png'); }
 .icon_smartart.active{background-image: url('../images/common/large_smartart_on.png'); }
-.icon_chart.active{background-image: url('../images/common/large_chart_on.png'); }
+.icon_chart.active{background-image: url('../images/common/large_chart_on.png'); }*/
 
 /* swiper 图标菜单*/
 .topNavGuide{border: 1px solid #e3e3e3;}

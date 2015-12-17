@@ -3,8 +3,8 @@ $(function(){
    tabMenu(".topTab","active");
    tabMenu(".menu-section-list","active");
    tabMenu(".topNav","active");
-   tabMenu(".footerBtn","active");
-   toggleBox(".toggleBtn","open");
+    tabFooter(".footerBtn","active");
+    toggleBox(".toggleBtn","open");
     toggleTable(".toggleBTable","active");
     collToggle(".collItem","active",".collBox","onSelect");
     toggleBtn(".btnItem","activeTwo");
@@ -16,6 +16,16 @@ $(function(){
         $("a.btnItem").addClass("activeOne")
     });
 })
+
+/* tabFooter 切换效果 */
+function tabFooter(className,activeName){
+    var target = $(className).find("li");
+        touch.on(target, 'hold tap doubletap', function(ev){
+            $(this).parents("li").addClass(activeName).siblings("li").removeClass(activeName);
+        });
+
+}
+
 /* list 切换列表 */
 function toggleLinks(className,activeName){
     var target = $(className);
