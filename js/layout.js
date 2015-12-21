@@ -3,6 +3,7 @@ $(function(){
    tabMenu(".topTab","active");
    tabMenu(".menu-section-list","active");
    tabMenu(".topNav","active");
+    tabMenu02(".topTab02","active");
     tabFooter(".footerBtn","active");
     toggleBox(".toggleBtn","open");
     toggleTable(".toggleBTable","active");
@@ -65,6 +66,14 @@ function tabMenu(className,activeName){
     var target = $(className).find("li a");
     touch.on(target, 'hold tap doubletap', function(ev){
         $(this).addClass(activeName).parents("li").siblings("li").find("a").removeClass(activeName);
+    });
+}
+
+/* menu 切换效果 */
+function tabMenu02(className,activeName){
+    var target = $(className).find("a");
+    touch.on(target, 'hold tap doubletap', function(ev){
+        $(this).addClass(activeName).siblings().removeClass(activeName);
     });
 }
 
