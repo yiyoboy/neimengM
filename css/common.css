@@ -125,11 +125,11 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 .w_80{width:80px !important;}
 .w_50{width:50px !important;}
 
-#main{height:100%; background-color: #eaeaea; -moz-box-shadow:-10px 0px 20px #c2bebd;              /* For Firefox3.6+ */border: none;
+#main{height:100%; background-color: #eaeaea; -moz-box-shadow:-10px 0px 20px #c2bebd;/* 右侧第一项的正负值阴影修改 */  /* For Firefox3.6+ */border: none;
     -webkit-box-shadow:-10px 0px 20px #c2bebd;           /* For Chrome5+, Safari5+ */
     box-shadow:-10px 0px 20px #c2bebd;                   /* For Latest Opera */}
 .panel-body{ background-color: #ffffff;}
-/** * Slideout module styles*/
+/** * Slideout module styles  */
 .menu{ border:0; background-image: url("../images/common/logo.png"); background-size: 50% auto; background-position: center 92%; background-repeat: no-repeat; background-color:#eaeaea;}
 .menu .topInfo{ height: 200px; position: relative; background-image: url("../images/common/bg_info.png"); background-repeat: no-repeat; background-position: left center; background-size: 100% 100%;}
 .menu .topInfo .photo{ padding-top:15%; }
@@ -157,7 +157,7 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 .menu-section-list a.menu06{background-image: url("../images/common/ico06_menu.png");}
 
 .menu,
-.slideout-menu{position: fixed;left: 0;top: 0;bottom: 0;right: 0;z-index: 0;width: 256px;overflow-y: scroll;-webkit-overflow-scrolling: touch;display: none;}
+.slideout-menu{position: fixed; left: 0;/* 右侧 */top: 0;bottom: 0;right: 0;z-index: 0;width: 256px;overflow-y: scroll;-webkit-overflow-scrolling: touch;display: none;}
 .slideout-panel{position: relative;z-index: 1;}
 .slideout-open,
 .slideout-open body{overflow: hidden;}
