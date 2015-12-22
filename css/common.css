@@ -249,7 +249,7 @@ p.topTab02 a.active{ /* 皮肤 */ border-bottom: 2px solid #000000; font-size: 1
 .dateHeader.noDate .dateGuide{display:none;}
 .dateHeader.noDate{ height:87px;}
 .dateGuide{ position: relative; }
-.dateGuide a.toggleBtn{ position: absolute; top: 8px; right: 5px; width: 30px; height: 30px; text-indent: -5000px; background: url("../images/common/toggle_ico02.png") center center no-repeat; background-size: 30px 30px;}
+.dateGuide a.toggleBtn{ position: absolute; top: 8px; right: 5px; z-index: 99999; width: 30px; height: 30px; text-indent: -5000px; background: url("../images/common/toggle_ico02.png") center center no-repeat; background-size: 30px 30px;}
 .dateGuide a.toggleBtn.open{background-image: url("../images/common/toggle_ico01.png");}
 
 /** * Note: the root picker element should *NOT* be styled more than what’s here. */
@@ -317,6 +317,37 @@ p.topTab02 a.active{ /* 皮肤 */ border-bottom: 2px solid #000000; font-size: 1
 /** * The footer containing the "today" and "clear" buttons. */
 .picker__footer{text-align: center; display: none;}
 
+
+/* 月份日历 */
+#MonthSel{ color: #999999;}
+#MonthSel .clear{clear: both;}
+#MonthSel {background-color:white;}
+#MonthSel .title{position: relative; font-size:1em; height: 50px; color: #b1d95f; line-height: 50px; text-align: center;}
+#MonthSel .title li.middle{position:relative; overflow:visible;top: -5px;}
+#MonthSel .title li.middle select{ font-size: 18px; border: 1px solid #92cc1f; color: #92cc1f; padding: 0 10px;}
+
+#MonthSel .title li.middle .year_list{width:100px; position:absolute; background-color:lightgrey; left:-20px}
+#MonthSel .title li.middle .year_list li {background-color:transparent; text-align:center; width:45px; height: 20px;}
+#MonthSel .title li.middle .year_list ul{clear: both;}
+
+#MonthSel .title li, #MonthSel .body li{ display:inline; cursor:pointer}
+
+#MonthSel .title li:first-child, #MonthSel .title li:last-child{position: absolute; z-index: 9999; overflow: hidden; text-indent: -5000px; padding: .5em 1.25em; width: 1em; height: 1em; top: .5em;}
+#MonthSel .title li:last-child{right: 1.5em; padding-left: 1.25em;}
+#MonthSel .title li:first-child{left: 1.5em; padding-right: 1.25em;}
+#MonthSel .title li:first-child:before,
+#MonthSel .title li:first-child:before{content: " "; border-top: .5em solid transparent; border-bottom: .5em solid transparent; border-right: 0.75em solid #92cc1f; width: 0; height: 0; display: block; margin: 0 auto;}
+#MonthSel .title li:last-child:before{border-right: 0; border-left: 0.75em solid #92cc1f;}
+#MonthSel .title li:last-child:hover,
+#MonthSel .title li:first-child:hover{cursor: pointer; olor: #999999;  background: #b1dcfb;}
+#MonthSel .title .inner.paddingTop{width: 60%; margin: 0 auto;}
+#MonthSel .body ul {  overflow: hidden;}
+#MonthSel .body ul li{ float: left; width: 33%; font-size: 18px; text-align: center; height: 55px; line-height: 55px;color: #999999; background: #fdfdfd; border-top: 1px solid #e5e5e5; }
+#MonthSel .body ul li .inner{ width: 40px; height: 40px;border-radius: 50%; margin: 7px auto 0; line-height: 40px;}
+#MonthSel .body ul li.over .inner{ background-color: #92cc20; color:#ffffff; font-weight: bold;}
+#MonthSel .bottom{ height: 16px; padding-top: 5px; text-align: center }
+#MonthSel .bottom button.clear{   background-color: gainsboro; border: 1px solid; font-size: 12px;}
+
 /* 指标内容 */
 .tableGuide{ background-color: #e7e7e7;}
 .tableTitle { position:absolute;bottom: 0; width: 100%; left: 0; background-color: #ffffff;}
@@ -329,7 +360,7 @@ p.topTab02 a.active{ /* 皮肤 */ border-bottom: 2px solid #000000; font-size: 1
 
 /* 指标表格 */
 .tableBox{ position: relative; margin-bottom: 5px;}
-.tableBox a.toggleBTable{ position: absolute; top: 4px; right:5px; width: 30px; height: 30px; text-indent: -5000px; background: url("../images/common/toggle_ico02.png") center center no-repeat; background-size: 30px 30px;}
+.tableBox a.toggleBTable{ position: absolute; top: 4px; right:5px; width: 30px; height: 30px;  text-indent: -5000px; background: url("../images/common/toggle_ico02.png") center center no-repeat; background-size: 30px 30px;}
 .tableBox a.toggleBTable.active{background-image: url("../images/common/toggle_ico01.png");}
 .tableBox table{ text-align: center; border-bottom: 1px solid #d9d9d9; color: #606060;}
 .tableBox table thead th.imText{color: #92cc20;}
