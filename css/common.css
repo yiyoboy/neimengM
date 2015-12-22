@@ -127,7 +127,8 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 
 #main{height:100%; background-color: #eaeaea; -moz-box-shadow:-10px 0px 20px #c2bebd;/* 右侧第一项的正负值阴影修改 */  /* For Firefox3.6+ */border: none;
     -webkit-box-shadow:-10px 0px 20px #c2bebd;           /* For Chrome5+, Safari5+ */
-    box-shadow:-10px 0px 20px #c2bebd;                   /* For Latest Opera */}
+    box-shadow:-10px 0px 20px #c2bebd;                   /* For Latest Opera */   }
+
 .panel-body{ background-color: #ffffff;}
 /** * Slideout module styles  */
 .menu{ border:0; background-image: url("../images/common/logo.png"); background-size: 50% auto; background-position: center 92%; background-repeat: no-repeat; background-color:#eaeaea;}
@@ -157,7 +158,9 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 .menu-section-list a.menu06{background-image: url("../images/common/ico06_menu.png");}
 
 .menu,
-.slideout-menu{position: fixed; left: 0;/* 右侧 */top: 0;bottom: 0;right: 0;z-index: 0;width: 256px;overflow-y: scroll;-webkit-overflow-scrolling: touch;display: none;}
+.slideout-menu{position: fixed; left: 0;/* 右侧 */top: 0;bottom: 0;right: 0;z-index: 999999;/border: none;
+    -webkit-box-shadow:10px 0px 20px #c2bebd;           /* For Chrome5+, Safari5+ */
+    box-shadow:10px 0px 20px #c2bebd;    width: 256px;overflow-y: scroll;-webkit-overflow-scrolling: touch;display: none;}
 .slideout-panel{position: relative;z-index: 1;}
 .slideout-open,
 .slideout-open body{overflow: hidden;}
@@ -276,7 +279,7 @@ p.topTab02 a.active{ /* 皮肤 */ border-bottom: 2px solid #000000; font-size: 1
 .picker__month,
 .picker__year{display: inline-block; padding:0 5px; border-radius: 5px; font-size: 18px;position: absolute}
 .picker__year{ left: 50%; margin-left: -55px; }
-.picker__month{margin-left:10px;}
+.picker__month{margin-left:10px; left: 50%;}
 .yearText{ position: absolute; left: 50%; margin-left: -5px; top: 0;font-size:18px; line-height: 50px;  display:inline-block; color: #b1d95f;  z-index: 9999; }
 /** * The month navigation buttons. */
 .picker__nav--prev,
