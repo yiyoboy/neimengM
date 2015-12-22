@@ -67,8 +67,7 @@
 				year = box.val().split("-")[0] * 1;
 				month = box.val().split("-")[1] * 1;
 			}
-
-			canlederBox.find(_title_ul_li).eq(1).find("div.inner").html(_getSelect(year));
+			//canlederBox.find(_title_ul_li).eq(1).find("div.inner").html(_getSelect(year));
 			canlederBox.find(".body li").each(function(){
 				if($(this).text() == month){
 					$(this).addClass("cur");
@@ -90,7 +89,6 @@
 		};
 			
 		function _getSelect(year){
-			
 			if(!year){
 				year = new Date().getFullYear();
 			}
@@ -108,6 +106,11 @@
 					$(this).attr("selected", "selected");
 				}
 			});
+            var selectHtml = $select.prop('outerHTML');
+            var now = new Date();
+            var month = now.getMonth() + 1;
+            selectHtml +="<span id='monthSpan'>"+month+"月</span>";
+            $select = $(selectHtml);
 			return $select;
 		};
 		 
@@ -158,15 +161,16 @@
 			var $body_ul = $body.find("ul");
 			for(var i = 0; i < 12; i++){
 				var $inner = $("<div/>").addClass("inner").text(i+1+"月");
+
 				var $li = $("<li/>").append($inner).click(function(){
 					 
 					var year = canlederBox.find(_title_ul_li).eq(1).find("select").val();
-					var month = $(this).find("div.inner").text() * 1;
+					var month = $(this).find("div.inner").text();
 					month = month < 10 ? "0" + month : month;
 					//edit by lilei,取选择的月份
-					alert(year+"-"+month);
 					canlederBox.data("box").val(year + "-" + month);
-					
+					$("#monthSpan").text(month);
+
 				});
 				
 				$li.hover(function(){
@@ -179,6 +183,9 @@
 				});
 
 				$body_ul.append($li);
+                if(i==(new Date()).getMonth()){
+                    $inner.parent().addClass("over02");
+                }
 			}
 		};
 

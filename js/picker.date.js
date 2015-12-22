@@ -234,7 +234,6 @@ DatePicker.prototype.now = function( type, value, options ) {
  * Navigate to next/prev month.
  */
 DatePicker.prototype.navigate = function( type, value, options ) {
-
     if ( $.isPlainObject( value ) ) {
 
         var targetDateObject = new Date( value.year, value.month + ( options && options.nav ? options.nav : 0 ), 1 ),

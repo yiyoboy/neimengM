@@ -336,15 +336,18 @@ p.topTab02 a.active{ /* 皮肤 */ border-bottom: 2px solid #000000; font-size: 1
 #MonthSel .title li:last-child{right: 1.5em; padding-left: 1.25em;}
 #MonthSel .title li:first-child{left: 1.5em; padding-right: 1.25em;}
 #MonthSel .title li:first-child:before,
-#MonthSel .title li:first-child:before{content: " "; border-top: .5em solid transparent; border-bottom: .5em solid transparent; border-right: 0.75em solid #92cc1f; width: 0; height: 0; display: block; margin: 0 auto;}
+#MonthSel .title li:last-child:before{content: " "; border-top: .5em solid transparent; border-bottom: .5em solid transparent; border-right: 0.75em solid #92cc1f; width: 0; height: 0; display: block; margin: 0 auto;}
 #MonthSel .title li:last-child:before{border-right: 0; border-left: 0.75em solid #92cc1f;}
 #MonthSel .title li:last-child:hover,
-#MonthSel .title li:first-child:hover{cursor: pointer; olor: #999999;  background: #b1dcfb;}
-#MonthSel .title .inner.paddingTop{width: 60%; margin: 0 auto;}
+#MonthSel .title li:first-child:hover{cursor: pointer; color: #999999;  background: #b1dcfb;}
+#MonthSel .title .inner.paddingTop{width: 60%; margin: 0 auto; font-size: 18px;}
+#MonthSel .title .inner.paddingTop span{ padding-left:4px; position: relative; top: 2px;}
 #MonthSel .body ul {  overflow: hidden;}
 #MonthSel .body ul li{ float: left; width: 33%; font-size: 18px; text-align: center; height: 55px; line-height: 55px;color: #999999; background: #fdfdfd; border-top: 1px solid #e5e5e5; }
 #MonthSel .body ul li .inner{ width: 40px; height: 40px;border-radius: 50%; margin: 7px auto 0; line-height: 40px;}
-#MonthSel .body ul li.over .inner{ background-color: #92cc20; color:#ffffff; font-weight: bold;}
+#MonthSel .body ul li.over .inner,
+#MonthSel .body ul li.over.over02 .inner{ background-color: #92cc20; color:#ffffff; font-weight: bold;}
+#MonthSel .body ul li.over02 .inner{ background-color: #bfbec3; color:#ffffff; font-weight: bold;}
 #MonthSel .bottom{ height: 16px; padding-top: 5px; text-align: center }
 #MonthSel .bottom button.clear{   background-color: gainsboro; border: 1px solid; font-size: 12px;}
 
