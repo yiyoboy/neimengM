@@ -90,7 +90,10 @@
 			
 		function _getSelect(year){
 			if(!year){
-				year = new Date().getFullYear();
+                var accYear = $("#acctMonth").val();
+                accYear = parseInt(accYear.substring(0,4));
+				//year = new Date().getFullYear();
+                year = accYear;
 			}
 			
 			
@@ -107,13 +110,13 @@
 				}
 			});
             var accMonth = $("#acctMonth").val();
-            accMonth = accMonth.substring(5);
+            accMonth = accMonth.substring(4);
             var selectHtml = $select.prop('outerHTML');
             selectHtml +="<span id='monthSpan'>"+accMonth+"月</span>";
             $select = $(selectHtml);
 			return $select;
 		};
-		 
+
 		function _buildTitle(canlederBox){
 			var $title =  $("<div/>").addClass("title").append("<ul/>").appendTo(canlederBox);
 			var $title_ul = $title.find("ul");
@@ -157,6 +160,8 @@
 		};
 
 		function _buildBody(canlederBox){
+            var accMonth = $("#acctMonth").val();
+            accMonth = accMonth.substring(5);
 			var $body =  $("<div/>").addClass("body").append("<ul/>").appendTo(canlederBox);
 			var $body_ul = $body.find("ul");
 			for(var i = 0; i < 12; i++){
@@ -172,7 +177,13 @@
 					$("#monthSpan").text(month);
 
 				});
-				
+				if(i==accMonth*1-1){
+                    $li.addClass("over02");
+
+                }
+                else{
+                    $li.removeClass("over");
+                }
 				$li.hover(function(){
 					 
 					$(this).addClass("over");
@@ -183,9 +194,9 @@
 				});
 
 				$body_ul.append($li);
-                if(i==(new Date()).getMonth()){
+                /*if(i==(new Date()).getMonth()){
                     $inner.parent().addClass("over02");
-                }
+                }*/
 			}
 		};
 
