@@ -106,10 +106,10 @@
 					$(this).attr("selected", "selected");
 				}
 			});
+            var accMonth = $("#acctMonth").val();
+            accMonth = accMonth.substring(5);
             var selectHtml = $select.prop('outerHTML');
-            var now = new Date();
-            var month = now.getMonth() + 1;
-            selectHtml +="<span id='monthSpan'>"+month+"月</span>";
+            selectHtml +="<span id='monthSpan'>"+accMonth+"月</span>";
             $select = $(selectHtml);
 			return $select;
 		};
