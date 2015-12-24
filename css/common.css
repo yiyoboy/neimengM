@@ -177,7 +177,7 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 #main img,
 .lead_guide img{height: auto;  max-width:100%;}
 .lead_guide{ width: 100%; height: 100%; text-align: center; overflow: hidden;}
-.lead_guide img{position:absolute; top:50%;left:50%;transform:translate(-50%,-50%); -webkit-transform:translate(-50%,-50%);  }
+.lead_guide img{/*position:absolute; top:50%;left:50%;transform:translate(-50%,-50%); -webkit-transform:translate(-50%,-50%); */ }
 .lead_guide a{ text-decoration:none;font-size: 1em; top: 20px; right: 20px; position: absolute; z-index: 2; display:inline-block; border-radius:5px; color: #fff;  background:rgba(102,102,102,0.3); line-height: 20px; text-align: center; padding: 5px 10px 5px 5px; height: 20px;}
 .lead_guide a span{ color: #e68900; padding: 0 5px;}
 
@@ -245,7 +245,8 @@ p.topTab02 a.active{ /* 皮肤 */  background-color: #92cc1f; color: #ffffff; fo
 .charBox{ border-bottom: 2px solid #e5e5e5; min-height:200px; padding: 5px; background-color: #ffffff; }
 
 /* 日历样式 */
-
+input.datepicker,
+input.datepicker02{ border:none; line-height: 40px; text-align: center; width: 100%; font-size: 18px;color: #b1d95f;}
 .dateHeader{ height:130px;border-bottom: 1px solid #e5e5e5;overflow: hidden;}
 /* 没有日历高度 */
 .dateHeader.noDate .dateGuide{display:none;}
@@ -255,7 +256,7 @@ p.topTab02 a.active{ /* 皮肤 */  background-color: #92cc1f; color: #ffffff; fo
 .dateGuide a.toggleBtn.open{background-image: url("../images/common/toggle_ico01.png");}
 
 /** * Note: the root picker element should *NOT* be styled more than what’s here. */
-.picker{text-align: left; line-height: 1.2; color: #4c4c4c; user-select: none; border-bottom: 1px solid #e5e5e5;}
+.picker{text-align: left; line-height: 1.2; color: #4c4c4c; user-select: none; border-top:1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5;}
 /** * The picker input element. */
 .picker__input{cursor: default;}
 /** * When the picker is opened, the input element is “activated”. */
@@ -271,6 +272,7 @@ p.topTab02 a.active{ /* 皮肤 */  background-color: #92cc1f; color: #ffffff; fo
 /** * For `large` screens, transform into an inline picker. */
 /* ========================================================================== $BASE-DATE-PICKER ========================================================================== */
 /** * The picker box. */
+
 .picker__box{ }
 /** * The header containing the month and year stuff. */
 .picker__header{position: relative; font-size:1em; height: 50px; color: #b1d95f; line-height: 50px; text-align: center;}
@@ -279,7 +281,7 @@ p.topTab02 a.active{ /* 皮肤 */  background-color: #92cc1f; color: #ffffff; fo
 .picker__year{display: inline-block; padding:0 5px; border-radius: 5px; font-size: 18px;position: absolute}
 .picker__year{ left: 50%; margin-left: -55px; }
 .picker__month{margin-left:10px; left: 50%;}
-.yearText{ position: absolute; left: 50%; margin-left: -5px; top: 0;font-size:18px; line-height: 50px;  display:inline-block; color: #b1d95f;  z-index: 99; }
+.yearText{ position: absolute; left: 50%; margin-left: -5px; top: 42px;font-size:18px; line-height: 50px;  display:inline-block; color: #b1d95f; }
 /** * The month navigation buttons. */
 .picker__nav--prev,
 .picker__nav--next{position: absolute; padding: .5em 1.25em; width: 1em; height: 1em; top: .5em;}
@@ -321,7 +323,7 @@ p.topTab02 a.active{ /* 皮肤 */  background-color: #92cc1f; color: #ffffff; fo
 
 
 /* 月份日历 */
-#MonthSel{ color: #999999; position: absolute; left:0; top:0; width:100%;}
+#MonthSel{ color: #999999; border-top:1px solid #e5e5e5;}
 #MonthSel .clear{clear: both;}
 #MonthSel {background-color:white;}
 #MonthSel .title{position: relative; font-size:1em; height: 50px; color: #b1d95f; line-height: 50px; text-align: center;}
@@ -334,7 +336,7 @@ p.topTab02 a.active{ /* 皮肤 */  background-color: #92cc1f; color: #ffffff; fo
 
 #MonthSel .title li, #MonthSel .body li{ display:inline; cursor:pointer}
 
-#MonthSel .title li:first-child, #MonthSel .title li:last-child{position: absolute; z-index: 9999; overflow: hidden; text-indent: -5000px; padding: .5em 1.25em; width: 1em; height: 1em; top: .5em;}
+#MonthSel .title li:first-child, #MonthSel .title li:last-child{position: absolute; z-index:1; overflow: hidden; text-indent: -5000px; padding: .5em 1.25em; width: 1em; height: 1em; top: .5em;}
 #MonthSel .title li:last-child{right: 1.5em; padding-left: 1.25em;}
 #MonthSel .title li:first-child{left: 1.5em; padding-right: 1.25em;}
 #MonthSel .title li:first-child:before,
@@ -355,7 +357,7 @@ p.topTab02 a.active{ /* 皮肤 */  background-color: #92cc1f; color: #ffffff; fo
 
 /* 指标内容 */
 .tableGuide{ background-color: #e7e7e7;}
-.tableTitle { position:absolute;bottom: 0; width: 100%; left: 0; background-color: #ffffff;}
+.tableTitle { z-index: 3; position:absolute;bottom: 0; width: 100%; left: 0; background-color: #ffffff;}
 .tableTitle h3{ font-size: 14px; font-weight: normal; border-bottom: 1px solid #e5e5e5; border-top: 1px solid #e5e5e5; height: 40px; line-height: 40px; color: #93cb20; padding-left: 30px; background-image: url("../images/common/title_line.png"); background-size:24px 24px;  background-repeat: no-repeat; background-position: 4px center;  }
 .tableTitle h3.tableIco01{ background-image:url("../images/common/large_shapes_on.png");}
 .tableTitle h3.tableIco02{background-image:url("../images/common/large_chart_on.png");}

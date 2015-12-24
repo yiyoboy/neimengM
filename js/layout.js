@@ -91,14 +91,14 @@ function toggleBox (btnName,activeName){
         var dateH = $(".dateHeader").height();
         if(dateH > 130){
            $(this).addClass(activeName);
-            $(".panel-body").height(panelBodyH+238);
+            $(".panel-body").height(panelBodyH+278);
             $(".dateHeader").height(130);
         }
         else
         {
             $(this).removeClass(activeName);
-            $(".panel-body").height(panelBodyH-238);
-            $(".dateHeader").height(368);
+            $(".panel-body").height(panelBodyH-278);
+            $(".dateHeader").height(408);
         }
 
     })

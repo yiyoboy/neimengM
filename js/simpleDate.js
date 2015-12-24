@@ -112,7 +112,7 @@
             var accMonth = $("#acctMonth").val();
             accMonth =parseInt( accMonth.substring(4));
             var selectHtml = $select.prop('outerHTML');
-            selectHtml +="<span id='monthSpan'>"+accMonth+"月</span>";
+           // selectHtml +="<span id='monthSpan'>"+accMonth+"月</span>";
             $select = $(selectHtml);
 			return $select;
 		};
@@ -173,7 +173,7 @@
 					var month = $(this).find("div.inner").text();
 					month = month < 10 ? "0" + month : month;
 					//edit by lilei,取选择的月份
-					canlederBox.data("box").val(year + "-" + month);
+					canlederBox.data("box").val("选择月份："+year + "年" + month);
 					$("#monthSpan").text(month);
 
 				});
