@@ -175,10 +175,10 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 
 /*框架 */
 #main img,
-.lead_guide img{height: auto;  width: auto\9;  max-width:100%;}
-.lead_guide{ width: 100%; height: 100%;}
+.lead_guide img{height: auto;  max-width:100%;}
+.lead_guide{ width: 100%; height: 100%; text-align: center; overflow: hidden;}
 .lead_guide img{position:absolute; top:50%;left:50%;transform:translate(-50%,-50%); -webkit-transform:translate(-50%,-50%);  }
-.lead_guide a{ text-decoration:none;font-size: 1em; top: 20px; right: 20px; position: absolute; z-index: 2; display:inline-block; border-radius:5px; color: #fff;  background:rgba(102,102,102,0.3); line-height: 20px; text-align: center; padding: 5px; height: 20px;}
+.lead_guide a{ text-decoration:none;font-size: 1em; top: 20px; right: 20px; position: absolute; z-index: 2; display:inline-block; border-radius:5px; color: #fff;  background:rgba(102,102,102,0.3); line-height: 20px; text-align: center; padding: 5px 10px 5px 5px; height: 20px;}
 .lead_guide a span{ color: #e68900; padding: 0 5px;}
 
 #center{ }
@@ -311,7 +311,7 @@ p.topTab02 a.active{ /* 皮肤 */  background-color: #92cc1f; color: #ffffff; fo
 .picker__day--infocus:hover,
 .picker__day--outfocus:hover{cursor: pointer; color: #000000; background: #b1dcfb;}
 .picker__day--highlighted:hover,
-.picker--focused .picker__day--highlighted{background: #0089ec; color: #ffffff;}
+.picker--focused .picker__day--highlighted{background: #92cc20; color: #ffffff;}
 .picker__day--disabled,
 .picker__day--disabled:hover{background: #f5f5f5; border-color: #f5f5f5; color: #dddddd; cursor: default;}
 .picker__day--highlighted.picker__day--disabled,
@@ -348,15 +348,15 @@ p.topTab02 a.active{ /* 皮肤 */  background-color: #92cc1f; color: #ffffff; fo
 #MonthSel .body ul li{ float: left; width: 33%; font-size: 18px; text-align: center; height: 55px; line-height: 55px;color: #999999; background: #fdfdfd; border-top: 1px solid #e5e5e5; }
 #MonthSel .body ul li .inner{ width: 40px; height: 40px;border-radius: 50%; margin: 7px auto 0; line-height: 40px;}
 #MonthSel .body ul li.over .inner,
-#MonthSel .body ul li.over.over02 .inner{ background-color: #92cc20; color:#ffffff; font-weight: bold;}
-#MonthSel .body ul li.over02 .inner{ background-color: #bfbec3; color:#ffffff; font-weight: bold;}
+#MonthSel .body ul li.over.over02 .inner{ background-color: #92cc20; color:#ffffff;}
+#MonthSel .body ul li.over02 .inner{ background-color: #bfbec3; color:#ffffff; }
 #MonthSel .bottom{ height: 16px; padding-top: 5px; text-align: center }
 #MonthSel .bottom button.clear{   background-color: gainsboro; border: 1px solid; font-size: 12px;}
 
 /* 指标内容 */
 .tableGuide{ background-color: #e7e7e7;}
 .tableTitle { position:absolute;bottom: 0; width: 100%; left: 0; background-color: #ffffff;}
-.tableTitle h3{ font-size: 14px; font-weight: normal; border-bottom: 1px solid #333333; border-top: 1px solid #e5e5e5; height: 40px; line-height: 40px; color: #93cb20; padding-left: 30px; background-image: url("../images/common/title_line.png"); background-size:24px 24px;  background-repeat: no-repeat; background-position: 4px center;  }
+.tableTitle h3{ font-size: 14px; font-weight: normal; border-bottom: 1px solid #e5e5e5; border-top: 1px solid #e5e5e5; height: 40px; line-height: 40px; color: #93cb20; padding-left: 30px; background-image: url("../images/common/title_line.png"); background-size:24px 24px;  background-repeat: no-repeat; background-position: 4px center;  }
 .tableTitle h3.tableIco01{ background-image:url("../images/common/large_shapes_on.png");}
 .tableTitle h3.tableIco02{background-image:url("../images/common/large_chart_on.png");}
 .tableTitle h3.tableIco03{background-image:url("../images/common/large_clipart_on.png");}
@@ -371,12 +371,12 @@ p.topTab02 a.active{ /* 皮肤 */  background-color: #92cc1f; color: #ffffff; fo
 .tableBox table thead th.imText{color: #92cc20;}
 .tableBox table th{ background-color: #fefefe; border-bottom: 1px solid #d9d9d9; padding: 10px 2px; font-weight: normal; line-height: 1.5em; }
 .tableBox table td{line-height: 1.5em; border-bottom:1px solid #d9d9d9;padding: 5px 2px; background-color: #fff;}
-.tableBox table td.inLink a{ color: #606060; padding-right: 20px; background-image: url("../images/common/ico_table.png"); background-repeat: no-repeat; background-position: right center; background-size: 16px 16px;}
+.tableBox table td.inLink a{ display: block; color: #606060; padding-right: 20px; background-image: url("../images/common/ico_table.png"); background-repeat: no-repeat; background-position: right center; background-size: 16px 16px;}
 .tableBox table td.inLink.greenLink a{background-image: url("../images/common/ico02_table.png"); }
 /* login */
 body.login_bg .panel-body{ background-color: #92cb20;}
-.loginBox{ background-image: url("../images/common/bg_info.png"); background-repeat: no-repeat; background-position: top center; background-size: 100% auto; display: -webkit-flex;display: flex; flex-flow: column; -webkit-align-items: center; align-items: center;  -webkit-justify-content: center; justify-content: center; width: 100%; height: 100%;}
-.loginBox .centerLogin{ width: 80%; display: -webkit-flex; display: flex; -webkit-flex-flow: column;  flex-flow: column; -webkit-justify-content: center; justify-content: center;}
+.loginBox{ position: relative; background-image: url("../images/common/bg_info.png"); background-repeat: no-repeat; background-position: top center; background-size: 100% auto; display: -webkit-flex;display: flex; flex-flow: column; -webkit-align-items: center; align-items: center;  -webkit-justify-content: center; justify-content: center; width: 100%; height: 100%;}
+.loginBox .centerLogin{ width: 80%; position: absolute; top: 50%; margin-top: -180px; left: 50%; margin-left: -40%;  display: -webkit-flex; display: flex; -webkit-flex-flow: column;  flex-flow: column; -webkit-justify-content: center; justify-content: center;}
 .loginBox p.errText{ position: fixed; top: 0; z-index: 3; left:15%; font-size:1em;text-align: center; width: 70%;  margin: 5px auto; background:rgba(222,255,157,0.2);  line-height: 40px; color: #deff00;}
 .loginBox h2{ width: 90px; color: #fff; margin: 0 auto; padding-bottom: 20px;}
 .loginBox h2 span{display: block; height: 90px; background: url("../images/common/logo_login.png") center center no-repeat; background-size: 100%; text-indent: -5000px;}
@@ -533,5 +533,5 @@ body.login_bg .panel-body{ background-color: #92cb20;}
 }
 
 /*添加水印*/
-.watermarkDate{position:relative;}
-.watermarkDate .watermark {border:none; font-size:35px; font-family:"楷体"; box-shadow: 1px 1px 12px #fff; color:#666666; text-shadow: 1px 1px 0 #fff; padding:8px; position:absolute; left:50%; top:80px; width:85%; margin-left:-45%; text-align:center; z-index:99;transform:rotate(30deg); -ms-transform:rotate(30deg); -moz-transform:rotate(30deg); -webkit-transform:rotate(30deg); -o-transform:rotate(30deg);filter:alpha(opacity=30); -moz-opacity:0.2; opacity:0.2; line-height:2}
+.watermarkDate{position:relative;pointer-events:none;}
+.watermarkDate .watermark {pointer-events:none;border:none; font-size:35px; font-family:"楷体"; box-shadow: 1px 1px 12px #fff; color:#666666; text-shadow: 1px 1px 0 #fff; padding:8px; position:absolute; left:50%; top:80px; width:85%; margin-left:-45%; text-align:center; z-index:99;transform:rotate(30deg); -ms-transform:rotate(30deg); -moz-transform:rotate(30deg); -webkit-transform:rotate(30deg); -o-transform:rotate(30deg);filter:alpha(opacity=30); -moz-opacity:0.2; opacity:0.2; line-height:2}

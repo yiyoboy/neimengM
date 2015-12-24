@@ -110,7 +110,7 @@
 				}
 			});
             var accMonth = $("#acctMonth").val();
-            accMonth = accMonth.substring(4);
+            accMonth =parseInt( accMonth.substring(4));
             var selectHtml = $select.prop('outerHTML');
             selectHtml +="<span id='monthSpan'>"+accMonth+"月</span>";
             $select = $(selectHtml);
